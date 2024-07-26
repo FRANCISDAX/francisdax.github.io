@@ -17,20 +17,56 @@ body{
 
 /* Clase Contenedor Principal de la WebSite */
 .contenedor{
-    padding: 60px 0;
+    padding: 10px 10px;
     width: 90%;
-    max-width: 1000px;
     height: 100vh;
     margin: auto;
-    overflow: hidden;
+    background-color: aqua;
+    
 }
 
 /* Clase Título para todos los H1 */
 .titulo{
     color: #642a73;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 60px;
+    margin: 40px 40px;
+}
+
+/* Texto Tipeado */
+.contenedorTexto{
+    display: inline-block;
+}
+
+.text{
+    overflow: hidden;
+    font-size: 3.6rem;
+    font-weight: 700;
+    border-right: 0.1em solid #642a73;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end) infinite;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+/* Clase Ir hacia arriba de la Página Principal */
+.irArriba{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #23655c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.irArriba img{
+    width: 20px;
 }
 
 /* Header */
@@ -45,40 +81,149 @@ header{
 }
 
 nav{
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 30px 50px 0 0;
 }
 
-nav > a{
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 18px;
-    font-size: x-large;
+.logo{
+    margin-left: 60px;
+    border-radius: 20%;
 }
 
-nav > a:hover{
+.menuNavegación{
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menuNavegación > a{
+    color: #642a73;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 12px;
+}
+
+nav .menuNavegación > a:hover{
     text-decoration: underline;
 }
 
-header .textos_header{
+.textos_header{
     display: flex;
-    margin-top: 250px;
-    margin-left: 80px;
     flex-direction: column;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 200px;
+    margin-top: 450px;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 3px solid rgba(255, 255, 255, 0.18);
 }
 
 .textos_header h1{
-    font-size: 46px;
-    color: #642a73;
-    
+    font-family: Verdana;
+    font-size: 50px;
+    color:#642a73;
+    font-weight: bold;
 }
 
 .textos_header h2{
-    font-size: 32px;
-    color: #fff;
+    font-family: Geneva;
+    font-size: 48px;
+    color: #23655c;
     font-weight: 300;
-    margin-bottom: 20px;
 }
 
+/* Nosotros */
+main .contenedorNosotros{
+    padding: 0 150px;
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    background-color: #fff;
+    
+}
+
+.contenedor-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.contenedor-nosotros img{
+    display: flex;
+}
+
+.contenedor-nosotros .img .img1{
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.contenedor-nosotros .img .img2{
+    width: 300px;
+    height: 400px;
+    margin-top: -480px;
+    margin-left: 350px;
+    border-radius: 20px;
+}
+
+.contenedor-nosotros .img .img3{
+    width: 550px;
+    height: 280px;
+    margin-top: -150px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.contenido-textos{
+    font-family: Tahoma;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+}
+
+.contenido-textos p{
+    margin: 10px 0px 10px 0;
+}
+
+/* Servicios */
+main .contenedorServicios{
+    padding: 0 150px;
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    background-color: #f9f4f2;
+    
+}
+
+/* Clientes */
+main .contenedorClientes{
+    padding: 0 150px;
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    background-color: #fff;
+    
+}
+
+/* Contáctos */
+main .contenedorContáctos{
+    padding: 0 150px;
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    background-color: #f9f4f2;
+    
+}
 /* Footer */
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
