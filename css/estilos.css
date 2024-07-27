@@ -22,7 +22,6 @@ body{
     height: 100vh;
     margin: auto;
     background-color: aqua;
-    
 }
 
 /* Clase Título para todos los H1 */
@@ -69,13 +68,66 @@ body{
     width: 20px;
 }
 
+/* Botón con estilo Neon */
+.botonNeon{
+    width: 150px;
+    height: 60px;
+    margin: 30px 130px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #23655c;
+    box-shadow: 0 0 5px #23655c,
+                0 0 25px #23655c;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+.botonNeon:hover{
+    box-shadow: 0 0 5px #23655c,
+                0 0 25px #23655c,
+                0 0 50px #23655c,
+                0 0 100px #23655c,
+                0 0 200px #23655c;
+
+}
+
+/* Botón con estilo Secundario */
+.botonSecundario{
+    width: 150px;
+    height: 60px;
+    margin: 30px 30px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 2px solid #642a73;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px #642a73,
+                0 0 25px #642a73;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    color: #642a73;
+}
+
+.botonSecundario:hover{
+    box-shadow: 0 0 5px #642a73,
+                0 0 25px #642a73,
+                0 0 50px #642a73,
+                0 0 100px #642a73,
+                0 0 200px #642a73;
+
+}
+
 /* Header */
 header{
     width: 100%;
     height: 100vh;
     background: #bc4e9c;
-    background: -webkit-linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg);
-    background: linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg);
+    /* background: -webkit-linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg);
+    background: linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg); */
+    background: url(../img/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -112,12 +164,14 @@ nav .menuNavegación > a:hover{
 .textos_header{
     display: flex;
     flex-direction: column;
-    height: 180px;
-    justify-content: center;
-    align-items: center;
+    height: 200px;
+    width: 600px;
     margin: 20px 200px;
-    margin-top: 450px;
-    backdrop-filter: blur(30px);
+    margin-top: 48px;
+    margin-left: 60px;
+    padding: 10px 10px;
+    text-align: center;
+    backdrop-filter: blur(8px);
     border-radius: 10px;
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 3px solid rgba(255, 255, 255, 0.18);
@@ -143,7 +197,7 @@ main .contenedorNosotros{
     width: auto;
     height: 100vh;
     margin: auto;
-    background-color: #fff;
+    background: #fff;
     
 }
 
@@ -164,10 +218,10 @@ main .contenedorNosotros{
 }
 
 .contenedor-nosotros .img .img2{
-    width: 300px;
-    height: 400px;
-    margin-top: -480px;
-    margin-left: 350px;
+    width: 350px;
+    height: 410px;
+    margin-top: -490px;
+    margin-left: 310px;
     border-radius: 20px;
 }
 
@@ -197,18 +251,44 @@ main .contenedorServicios{
     width: auto;
     height: 100vh;
     margin: auto;
-    background-color: #f9f4f2;
-    
+    background: #f2f2f2;
 }
 
 /* Clientes */
 main .contenedorClientes{
     padding: 0 150px;
     width: auto;
-    height: 100vh;
+    height: auto;
     margin: auto;
-    background-color: #fff;
-    
+    background: #fff;
+}
+
+.galeriaClientes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagenClientes{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagenClientes > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 500ms ease-out;
+}
+
+img:hover{
+    transform: scale(1.3);
 }
 
 /* Contáctos */
@@ -217,7 +297,7 @@ main .contenedorContáctos{
     width: auto;
     height: 100vh;
     margin: auto;
-    background-color: #f9f4f2;
+    background: #f2f2f2;
     
 }
 /* Footer */
