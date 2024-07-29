@@ -1,3 +1,16 @@
+/* Configuración Variables Globales */
+:root {
+    --colorMarca: #bc4e9c;
+    --colorPrimario: #23655c ;
+    --colorSecundario: #642a73;
+    --colorTitulo: #642a73;
+    --colorNegro: #000;
+    --colorFooter:  #414141;
+    --colorBlanco: #fff;
+    --colorAcento: #f2f2f2;
+    --colorBordes: #444;
+}
+
 /* Reset de Estilos con Selector Universal */
 * {
     margin: 0;
@@ -15,44 +28,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Clase Contenedor Principal de la WebSite */
-.contenedor {
-    padding: 10px 10px;
-    width: 90%;
-    height: 100vh;
-    margin: auto;
-    background-color: aqua;
-}
-
 /* Clase Título para todos los H1 */
 .titulo {
-    color: #642a73;
+    color: var(--colorTitulo);
     font-size: 40px;
     text-align: center;
     margin: 40px 40px;
-}
-
-/* Texto Tipeado */
-.contenedorTexto {
-    display: inline-block;
-}
-
-.text {
-    overflow: hidden;
-    font-size: 3.6rem;
-    font-weight: 700;
-    border-right: 0.1em solid #642a73;
-    white-space: nowrap;
-    animation: typing 4s steps(40, end) infinite;
-}
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
 }
 
 /* Clase Ir hacia arriba de la Página Principal */
@@ -60,7 +41,7 @@ body {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: #23655c;
+    background-color: var(--colorPrimario);
     padding: 10px;
     border-radius: 10px;
 }
@@ -78,20 +59,20 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    background: #23655c;
-    box-shadow: 0 0 5px #23655c,
-                0 0 25px #23655c;
+    background: var(--colorPrimario);
+    box-shadow: 0 0 5px var(--colorPrimario),
+                0 0 25px var(--colorPrimario);
     transition: all 0.4s ease;
     cursor: pointer;
-    color: #fff;
+    color: var(--colorBlanco);
 }
 
 .botonNeon:hover {
-    box-shadow: 0 0 5px #23655c,
-                0 0 25px #23655c,
-                0 0 50px #23655c,
-                0 0 100px #23655c,
-                0 0 200px #23655c;
+    box-shadow: 0 0 5px var(--colorPrimario),
+                0 0 25px var(--colorPrimario),
+                0 0 50px var(--colorPrimario),
+                0 0 100px var(--colorPrimario),
+                0 0 200px var(--colorPrimario);
     transition: 2S ease;
     font-size: 17px;
 }
@@ -103,22 +84,22 @@ body {
     margin: 30px 30px;
     font-size: 15px;
     padding: 10px 20px;
-    border: 2px solid #642a73;
+    border: 2px solid var(--colorSecundario);
     border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 0 5px #642a73,
-                0 0 25px #642a73;
+    background: var(--colorBlanco);
+    box-shadow: 0 0 5px var(--colorSecundario),
+                0 0 25px var(--colorSecundario);
     transition: all 0.4s ease;
     cursor: pointer;
-    color: #642a73;
+    color: var(--colorSecundario);
 }
 
 .botonSecundario:hover {
-    box-shadow: 0 0 5px #642a73,
-                0 0 25px #642a73,
-                0 0 50px #642a73,
-                0 0 100px #642a73,
-                0 0 200px #642a73;
+    box-shadow: 0 0 5px var(--colorSecundario),
+                0 0 25px var(--colorSecundario),
+                0 0 50px var(--colorSecundario),
+                0 0 100px var(--colorSecundario),
+                0 0 200px var(--colorSecundario);
     transition: 2S ease;
     font-size: 17px;
 }
@@ -127,24 +108,26 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: #bc4e9c;
+    height: 100dvh;
+    background: var(--colorMarca);
     /* background: -webkit-linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg);
     background: linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg); */
-    background: url(../img/portada.jpg);
+    background: url(../img/portada.jpg) fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 nav {
     display: flex;
+    height: 100px;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 50px 0 0;
+    padding: 10px 50px 0 0;
 }
 
 .logo {
     margin-left: 60px;
     border-radius: 20%;
+    box-shadow: 8px 8px 8px var(--colorBordes);
 }
 
 .menuNavegación {
@@ -153,7 +136,7 @@ nav {
 }
 
 nav .menuNavegación > a {
-    color: #642a73;
+    color: var(--colorSecundario);
     font-weight: bold;
     text-decoration: none;
     font-size: 22px;
@@ -163,7 +146,7 @@ nav .menuNavegación > a {
 nav .menuNavegación > a:hover {
     text-decoration: underline;
     transition: 1S ease;
-    color: #23655c;
+    color: var(--colorPrimario);
 }
 
 .textos_header {
@@ -172,7 +155,7 @@ nav .menuNavegación > a:hover {
     height: 200px;
     width: 600px;
     margin: 20px 200px;
-    margin-top: 48px;
+    margin-top: 68px;
     margin-left: 60px;
     padding: 10px 10px;
     text-align: center;
@@ -185,14 +168,14 @@ nav .menuNavegación > a:hover {
 .textos_header h1 {
     font-family: Verdana;
     font-size: 50px;
-    color:#642a73;
+    color:var(--colorSecundario);
     font-weight: bold;
 }
 
 .textos_header h2 {
     font-family: Geneva;
     font-size: 48px;
-    color: #23655c;
+    color: var(--colorPrimario);
     font-weight: 300;
 }
 
@@ -202,7 +185,7 @@ main .contenedorNosotros {
     width: auto;
     height: 100vh;
     margin: auto;
-    background: #fff;
+    background: var(--colorBlanco);
     
 }
 
@@ -259,14 +242,14 @@ main .contenedorNosotros {
 }
 
 .contenido-textos .card .avatar {
-    background-color: #f2f2f2;
+    background-color: var(--colorAcento);
     justify-items: center;
     justify-content: center;
     text-align: center;
     width: 145px;
     border: 2px solid;
     border-radius: 10px;
-    box-shadow: 8px 8px 8px rgba(155, 155, 155, 1);
+    box-shadow: 8px 8px 8px var(--colorBordes);
     padding: 8px;
     letter-spacing: 0.5px;
     line-height: 6px;
@@ -287,7 +270,7 @@ main .contenedorNosotros {
     width: 60px;
     height: 60px;
     border-radius: 100%;
-    border: 2px solid #444;
+    border: 2px solid var(--colorBordes);
 }
 
 /* Servicios */
@@ -296,7 +279,7 @@ main .contenedorServicios {
     width: auto;
     height: 100vh;
     margin: auto;
-    background: #f2f2f2;
+    background: var(--colorAcento);
 }
 
 /* Clientes */
@@ -305,7 +288,7 @@ main .contenedorClientes {
     width: auto;
     height: auto;
     margin: auto;
-    background: #fff;
+    background: var(--colorBlanco);
 }
 
 .galeriaClientes {
@@ -342,12 +325,13 @@ main .contenedorContáctos {
     width: auto;
     height: 100vh;
     margin: auto;
-    background: #f2f2f2;
+    background: var(--colorAcento);
     
 }
+
 /* Footer */
 footer {
-    background: #414141;
+    background: var(--colorFooter);
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
