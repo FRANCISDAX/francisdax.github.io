@@ -1,17 +1,18 @@
-/* Configuración Variables Globales */
+/* Configuración Global de Colores */
 :root {
+    --colorBackground: #eee7dd;
     --colorMarca: #bc4e9c;
     --colorPrimario: #23655c ;
     --colorSecundario: #642a73;
     --colorTitulo: #642a73;
     --colorNegro: #000;
-    --colorFooter:  #414141;
+    --colorFooter:  #0a141d;
     --colorBlanco: #fff;
     --colorAcento: #f2f2f2;
     --colorBordes: #444;
 }
 
-/* Reset de Estilos con Selector Universal */
+/* Reseteo de Estilos */
 * {
     margin: 0;
     padding: 0;
@@ -109,33 +110,104 @@ header {
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    background: var(--colorMarca);
+    /* background: var(--colorBackground); */
     /* background: -webkit-linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg);
     background: linear-gradient(to right, hsla(340,95%,50%,0.179),hsl(317, 45%, 52%,0.179)), url(../img/portada.jpg); */
-    background: url(../img/portada.jpg) fixed;
+    /* background: url(../img/portada.jpg) fixed; */
+    /* background: transparent url(../img/portada.jpg);
+    background-size: cover;
+ */ }
+
+.background_Inicio {
+    height: 100vh;
+    height: 100dvh;
+    background: transparent url('../img/portada.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_Nosotros {
+    height: 100vh;
+    height: 100dvh;
+    background: transparent url('../img/portada_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_Servicios {
+    height: 100vh;
+    height: 100dvh;
+    background: transparent url('../img/portada_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_Campanias {
+    height: 100vh;
+    height: 100dvh;
+    background: transparent url('../img/portada_4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_Clientes {
+    height: 100vh;
+    height: 100dvh;
+    background: transparent url('../img/portada_5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_Contactos {
+    height: 100vh;
+    height: 100dvh;
+    background: transparent url('../img/portada_6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header > .headerInicio {
+    background: transparent url(/img/portada.jpg);
     background-size: cover;
 }
 
-nav {
+header > .headerNosotros {
+    background: transparent url(/img/portada_2.jpg);
+    background-size: cover;
+ }
+ */
+header nav {
     display: flex;
-    height: 100px;
+    margin-top: -68px;
+    background: var(--colorBackground);
+    width: 100%;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px 0 0;
+    padding: 0 60px 0 0;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 2px solid var(--colorBordes);
 }
 
-.logo {
+header nav .logo {
     margin-left: 60px;
     border-radius: 20%;
     box-shadow: 8px 8px 8px var(--colorBordes);
+    cursor: pointer;
+    transition: all 500ms ease;
 }
 
-.menuNavegación {
+header nav .logo:hover {
+    transform: scale(1.1);
+}
+
+header nav .menuNavegación {
     justify-content: center;
     align-items: center;
 }
 
-nav .menuNavegación > a {
+header nav .menuNavegación > a {
     color: var(--colorSecundario);
     font-weight: bold;
     text-decoration: none;
@@ -143,66 +215,83 @@ nav .menuNavegación > a {
     margin: 12px;
 }
 
-nav .menuNavegación > a:hover {
+header nav .menuNavegación > a:hover {
     text-decoration: underline;
     transition: 1S ease;
     color: var(--colorPrimario);
 }
 
-.textos_header {
+header .textos_header {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 350px;
     width: 600px;
-    margin: 20px 200px;
     margin-top: 68px;
     margin-left: 60px;
-    padding: 10px 10px;
+    padding: 160px 10px;
     text-align: center;
-    backdrop-filter: blur(8px);
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(6px);
+    border: none;
+    animation: EntrarDesdeIzquierda 1.5s ease;
 }
 
-.textos_header h1 {
+@keyframes EntrarDesdeIzquierda{
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .textos_header h1 {
     font-family: Verdana;
     font-size: 50px;
     color:var(--colorSecundario);
     font-weight: bold;
 }
 
-.textos_header h2 {
+header .textos_header h2 {
     font-family: Geneva;
     font-size: 48px;
     color: var(--colorPrimario);
-    font-weight: 300;
+    font-weight: bold;
 }
 
-/* Nosotros */
+header .textos_header .botones {
+    display: flex;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -85px;
+}
+
+/* Nosotros - Acerca de Nosotros */
 main .contenedorNosotros {
-    padding: 0 150px;
+    padding: 10px 120px;
     width: auto;
-    height: 100vh;
+    height: 1150px;
     margin: auto;
-    background: var(--colorBlanco);
-    
+    background: var(--colorBlanco);   
 }
 
 .contenedor-nosotros {
     display: flex;
+    height: 100%;
     justify-content: space-evenly;
     gap: 50px;
 }
 
 .contenedor-nosotros img {
     display: flex;
+    height: 100%;
 }
 
 .contenedor-nosotros .img .img1 {
     width: 600px;
     height: 600px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .contenedor-nosotros .img .img2 {
@@ -211,6 +300,7 @@ main .contenedorNosotros {
     margin-top: -490px;
     margin-left: 310px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .contenedor-nosotros .img .img3 {
@@ -219,6 +309,7 @@ main .contenedorNosotros {
     margin-top: -150px;
     margin-left: 50px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .contenido-textos {
@@ -233,6 +324,56 @@ main .contenedorNosotros {
     margin: 10px 0px 10px 0;
 }
 
+.contenido-textos li{
+    margin-left: 22px;
+    margin-top: 10px;
+}
+
+/* Nosotros - Nuestro Equipo de Trabajo */
+main .contenedorEquipo {
+    padding: 10px 120px;
+    width: auto;
+    height: 840px;
+    margin: auto;
+    background: var(--colorBackground);   
+}
+
+.contenedor-equipo {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.contenedor-equipo img {
+    display: flex;
+    height: 100%;
+}
+
+.contenedor-equipo .img .img1 {
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.contenedor-equipo .img .img2 {
+    width: 350px;
+    height: 410px;
+    margin-top: -490px;
+    margin-left: 310px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.contenedor-equipo .img .img3 {
+    width: 550px;
+    height: 280px;
+    margin-top: -150px;
+    margin-left: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+}
 .contenido-textos .card {
     display: flex;
     margin-top: 30px;
@@ -263,6 +404,7 @@ main .contenedorNosotros {
 .contenido-textos .card .avatar p {
     font-size: 0.8rem;  
 }
+
 .contenido-textos .card .avatar img {
     position: relative;
     object-fit: cover;
@@ -331,8 +473,65 @@ main .contenedorContáctos {
 
 /* Footer */
 footer {
+    width: 100%;
     background: var(--colorFooter);
-    padding: 60px 0 30px 0;
+}
+
+footer .grupo-1 {
+    width: auto;
+    max-width: 1200px;
     margin: auto;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;   
+}
+
+footer .grupo-1 .box figure {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo-1 .box figure img {
+    width: 90px;
+    border-radius: 25%;
+}
+
+footer .grupo-1 .box h2 {
+    color: var(--colorBlanco);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+footer .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+footer .grupo-1 .box .redesSociales a {
+    display: inline;
+    flex-direction: row;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--colorBlanco);
+    margin-right: 30px;
+}
+
+footer .grupo-1 .box .redesSociales a img {
+    width: 25px;
+    height: 25px;
+}
+
+footer .grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--colorBlanco);
+}
+
+footer .grupo-2 small {
+    font-size: 20px;
 }

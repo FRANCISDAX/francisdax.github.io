@@ -7,107 +7,53 @@
     <link rel="website icon" href="img/logo.jpg" type="jpg">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="background_Inicio">
+    <!-- Header  -->
     <header>
+        <!-- Barra de Navegación  -->
         <nav>
-            <img class="logo" src="img/logo.jpg" width="90px" height="90px" alt="Logo">
+            <!-- Logo de la Empresa  -->
+            <img class="logo" src="img/logo.jpg" width="60px" height="60px" alt="Logo">
+            <!-- Menú de Navegación  -->
             <div class="menuNavegación">
-                <a href="#">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="/pages/servicios.html">Servicios</a>
-                <a href="#">Campañas</a>
-                <a href="#clientes">Clientes</a>
-                <a href="#contactos">Contactos</a>
+                <a href="#" class="play-sound">Inicio</a>
+                <a href="/pages/nosotros.html" class="play-sound">Nosotros</a>
+                <a href="/pages/servicios.html" class="play-sound">Servicios</a>
+                <a href="/pages/campañas.html" class="play-sound">Campañas</a>
+                <a href="/pages/clientes.html" class="play-sound">Clientes</a>
+                <a href="/pages/contactos.html" class="play-sound">Contactos</a>
             </div>
         </nav>
+        <!-- Banner  -->
         <section class="textos_header">
             <h2>Bienvenidos a Fundación</h2>
             <h1>"Pequeñas Acciones</h1>
             <h1>Grandes Cambios"</h1>
-        </section>
-        <a href="#contactos"><button class="botonNeon">PIDE TU CITA</button></a>
-        <a href="#servicios"><button class="botonSecundario">SERVICIOS</button></a>
-    </header>
-    <main>
-        <!-- Nosotros -->
-        <section class="contenedorNosotros" id="nosotros">
-            <h1 class="titulo">Acerca de Nosotros</h1>
-            <div class="contenedor-nosotros">
-                <div class="img">
-                    <img src="img/img1.jpg" alt="imagén 1" class="img1">
-                    <img src="img/img2.jpg" alt="imagén 2" class="img2">
-                    <img src="img/img3.jpg" alt="imagén 3" class="img3">
-                </div>
-                <div class="contenido-textos">
-                    <h3>¿ Quiénes Somos ?</h3>
-                    <p>Somos una empresa Veterinaria que ofrecemos una asistencia completa y de calidad a tu mascota. 
-                    Nuestro principal objetivo es mantener la salud y el bienestar de nuestros animales y ayudarlos a 
-                    restablecerse cuando están enfermos. Para ello, contamos con un personal altamente calificado a 
-                    disposición del cliente.</p>
-                    <p>Fundación PAGC está conformado por un grupo de jóvenes voluntarios, quienes promovemos campañas 
-                    masivas de esterilización y castración a costo social a nivel de Lima y provincias.</p>
-                    <h3>Nuestro Equipo</h3>
-                    <section class="card">
-                        <div class="avatar">
-                            <img src="img/eqp1.png" alt="avatar">
-                            <h5>Javier Jarama</h5>
-                            <p>Médico Veterinario</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp2.png" alt="avatar">
-                            <h5>María Lozano</h5>
-                            <p>Asistente Médico</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp3.png" alt="avatar" >
-                            <h5>Carol Linares</h5>
-                            <p>Médico Veterinario</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp4.png" alt="avatar">
-                            <h5>Julia Sifuentes</h5>
-                            <p>Administrador</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp5.png" alt="avatar">
-                            <h5>Sofía Cárdenas</h5>
-                            <p>Asistente Médico</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp1.png" alt="avatar">
-                            <h5>Johan Reyna</h5>
-                            <p>Desarrollador Web</p>
-                        </div>
-                    </section>
-                </div>
+            <div class="botones">
+                <a href="/pages/contactos.html" class="play-sound"><button class="botonNeon">PIDE TU CITA</button></a>
+                <a href="/pages/servicios.html" class="play-sound"><button class="botonSecundario">SERVICIOS</button></a>        
             </div>
         </section>
-
+    </header>
+    <!-- Contenedor Principal  -->
+    <main>
+        <!-- Nosotros -->
+<!--         <section class="contenedorNosotros" id="nosotros">
+            <h1 class="titulo">Acerca de Nosotros</h1>
+            <div class="contenedor-nosotros">
+            </div>
+        </section>
+ -->
         <!-- Servicios -->
-        <section class="contenedorServicios" id="servicios">
+<!--         <section class="contenedorServicios" id="servicios">
             <h1 class="titulo">Servicios que ofrecemos</h1>
             <div class="contenedor-nosotros">
-                <div class="img">
-                    <img src="img/img1.jpg" alt="imagén 1" class="img1">
-                    <img src="img/img2.jpg" alt="imagén 2" class="img2">
-                    <img src="img/img3.jpg" alt="imagén 3" class="img3">
-                </div>
-                <div class="contenido-textos">
-                    <h3><span>1</span>Los mejores productos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                    <h3><span>2</span>Los mejores productos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                </div>
             </div>           
         </section>
-
+ -->
         <!-- Clientes -->
         <section class="contenedorClientes" id="clientes">
-            <h1 class="titulo">Galería de Clientes</h1>
+            <h1 class="titulo">Galería de Mascotas</h1>
             <div class="galeriaClientes">
                 <div class="imagenClientes">
                     <img src="img/cliente01.jpg" alt="">
@@ -150,30 +96,57 @@
         </section>
 
         <!-- Contáctos -->
-        <section class="contenedorContáctos" id="contactos">
-            <h1 class="titulo">Contáctenos ya</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quaerat nobis aspernatur voluptates est minima vitae ipsum, accusamus ab dolorem qui commodi! Perspiciatis in suscipit quaerat dignissimos? Quo, et quaerat?</p>
-            
+<!--         <section class="contenedorContáctos" id="contactos">
+            <h1 class="titulo">Contáctenos ya</h1>            
         </section>
-
+ -->
     </main>
 
     <!-- Botán Ir Arriba -->
-    <a href="#" class="irArriba">
+    <a href="#" class="irArriba play-sound">
         <img src="img/top.png" alt="">
     </a>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; Grupo 03 - Todos los Derechos Reservados 2024</p>
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/img/logo.jpg" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <h2>ENLACES</h2>
+                <p>Servicios</p>
+                <p>Campañas</p>
+                <p>Clientes</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="redesSociales">
+                    <a href="#"><img src="/img/facebook.png" alt="logo facebook"></a>
+                    <a href="#"><img src="/img/whatsapp.png" alt="logo whatsapp"></a>
+                    <a href="#"><img src="/img/instagram.png" alt=""></a>
+                    <a href="#"><img src="/img/twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Grupo 03 ELITEC</b> - Todos los Derechos Reservados</small>
+        </div>
     </footer>
+
+    <!-- Sonido cuando se hace click -->
+    <audio class="audio" src="/sound/Click.mp3" preload="auto"></audio>
+
+    <script src="/js/script.js"></script>
+
 </body>
 </html>
