@@ -166,16 +166,6 @@ header {
     background-repeat: no-repeat;
 }
 
-/* header > .headerInicio {
-    background: transparent url(/img/portada.jpg);
-    background-size: cover;
-}
-
-header > .headerNosotros {
-    background: transparent url(/img/portada_2.jpg);
-    background-size: cover;
- }
- */
 header nav {
     display: flex;
     margin-top: -68px;
@@ -266,7 +256,7 @@ header .textos_header .botones {
     margin-left: -85px;
 }
 
-/* Nosotros - Acerca de Nosotros */
+/* Página Nosotros - Area Acerca de Nosotros */
 main .contenedorNosotros {
     padding: 10px 120px;
     width: auto;
@@ -329,7 +319,7 @@ main .contenedorNosotros {
     margin-top: 10px;
 }
 
-/* Nosotros - Nuestro Equipo de Trabajo */
+/* Página Nosotros - Area Nuestro Equipo de Trabajo */
 main .contenedorEquipo {
     padding: 10px 120px;
     width: auto;
@@ -415,7 +405,7 @@ main .contenedorEquipo {
     border: 2px solid var(--colorBordes);
 }
 
-/* Servicios */
+/* Página Servicios */
 main .contenedorServicios {
     padding: 0 150px;
     width: auto;
@@ -424,9 +414,9 @@ main .contenedorServicios {
     background: var(--colorAcento);
 }
 
-/* Clientes */
-main .contenedorClientes {
-    padding: 0 150px;
+/* Página Inicio - Area Galería de Mascotas */
+main .contenedorGaleriaMascotas {
+    padding: 10px 150px;
     width: auto;
     height: auto;
     margin: auto;
@@ -461,7 +451,85 @@ main .contenedorClientes {
     transform: scale(1.3);
 }
 
-/* Contáctos */
+/* Página Inicio - Area Galería de Videos */
+main .contenedorGaleriaVideos {
+    padding: 10px 150px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background: var(--colorBackground);
+}
+
+/* Página de Clientes */
+main .contenedorClientes {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    background: var(--colorBlanco);
+}
+
+main .contenedorClientes h1{
+    margin-top: 80px;
+}
+
+/* Página de Clientes - Area Clientes Satisfechos */
+main .contenedorClientes .contenedor-clientes {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 45%;
+    width: 150px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    object-fit: cover;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+main .contenedorClientes .contenedor-clientes:hover {
+    animation-play-state: paused;
+}
+
+main .contenedorClientes .contenedor-clientes span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 36deg)) translateZ(350px);
+    -webkit-box-reflect: below 2px linear-gradient( transparent, transparent, rgba( 4, 4, 4, 0.267));
+}
+
+main .contenedorClientes .contenedor-clientes span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px double rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+main .contenedorClientes .contenedor-clientes span img:hover {
+    transform: translateY(-6px);
+}
+
+/* Página de Clientes - Area Testimonios */
+main .contenedorClientes .contenedor-testimonios {
+    background-color: #bc4e9c;
+    color: var(--colorBlanco);
+}
+
+/* Página Contáctos */
 main .contenedorContáctos {
     padding: 0 150px;
     width: auto;
