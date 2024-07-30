@@ -364,6 +364,7 @@ main .contenedorEquipo {
     border-radius: 20px;
     object-fit: cover;
 }
+
 .contenido-textos .card {
     display: flex;
     margin-top: 30px;
@@ -524,9 +525,49 @@ main .contenedorClientes .contenedor-clientes span img:hover {
 }
 
 /* Página de Clientes - Area Testimonios */
-main .contenedorClientes .contenedor-testimonios {
-    background-color: #bc4e9c;
-    color: var(--colorBlanco);
+main .contenedorTestimonios {
+    padding-top: 0.75px;
+    height: 100vh;
+    background: var(--colorBackground);   
+}
+
+main .contenedorTestimonios .card {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+main .contenedorTestimonios .card .avatar {
+    background-color: var(--colorAcento);
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px var(--colorBordes);
+    padding: 8px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+main .contenedorTestimonios .card .avatar h5 {
+    font-size: 1rem;
+    text-wrap: nowrap;  
+}
+
+main .contenedorTestimonios .card .avatar p {
+    font-size: 0.8rem;
+    line-height: 15px;  
+}
+
+main .contenedorTestimonios .card .avatar img {
+    position: relative;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid var(--colorBordes);
 }
 
 /* Página Contáctos */
