@@ -193,6 +193,7 @@ header nav .logo:hover {
 }
 
 header nav .menuNavegación {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -209,6 +210,51 @@ header nav .menuNavegación > a:hover {
     text-decoration: underline;
     transition: 1S ease;
     color: var(--colorPrimario);
+}
+
+/* Contenedor del submenú */
+header nav .menuNavegación .submenu-container {
+    position: relative;
+    color: var(--colorSecundario);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 12px;
+    position: relative;
+}
+
+header nav .menuNavegación .submenu-container > a {
+    color: var(--colorSecundario);
+    text-decoration: none;
+}
+
+header nav .menuNavegación .submenu-container .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--colorSecundario);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav .menuNavegación .submenu-container .submenu > a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 1S ease;
+}
+
+header nav .menuNavegación .submenu-container .submenu > a:hover {
+    color: var(--colorNegro);
+    text-decoration: none;
+}
+
+/* Mostrar submenú al pasar el mouse */
+header nav .menuNavegación .submenu-container:hover .submenu {
+    display: block;
 }
 
 header .textos_header {
