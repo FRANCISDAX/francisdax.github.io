@@ -17,6 +17,7 @@
         height="60px"
         alt="Logo"
       />
+
       <!--Header-Menu -->
       <div class="menu">
         <a href="/index.html" class="play-sound">Inicio</a>
@@ -31,6 +32,7 @@
   <body>
     <main>
       <h1>Medicina general veterinaria</h1>
+
       <!--Slider -->
       <div class="slider-principal">
         <ul>
@@ -40,6 +42,7 @@
           <li><img src="/img/img4-slide.jpg" alt="slide4" /></li>
         </ul>
       </div>
+
       <!--section-text -->
       <section class="seccion-principal">
         <p class="text-principal">
@@ -56,10 +59,50 @@
           seguimiento de el estado de salud de tu mascota hasta su alta.
         </p>
       </section>
-      <div>
-        <img src="" alt="" />
-        <button>Pide tu Cita</button>
+      <div class="seccionBtnCita">
+        <img
+          src="/img/icono-calendario.png"
+          alt="icono"
+          height="50px"
+          width="50px"
+        />
+
+        <!-- Botón abrir el modal -->
+        <button id="abrirModalBtn" class="btn-efecto">Pide tu Cita</button>
       </div>
     </main>
+
+    <!-- ---- modal -->
+    <div id="calendarioModal" class="modal">
+      <div class="contenedor-modal">
+        <span class="cerrar">&times;</span>
+        <h2>Agendar Cita</h2>
+
+        <label for="nombrePaciente">Nombre del Paciente: </label>
+        <input
+          type="text"
+          id="nombrePaciente"
+          placeholder="Ingresa el nombre"
+          maxlength="20"
+          required
+        />
+
+        <label for="celularPaciente">Teléfono: </label>
+        <input
+          type="tel"
+          id="celularPaciente"
+          placeholder="Ingresa el teléfono"
+          maxlength="20"
+          required
+        />
+
+        <label for="citaFechaHora">Fecha y Hora: </label>
+        <input type="datetime-local" id="citaFechaHora" required />
+
+        <button id="guardarBtn" class="btnModalGuardar">Guardar</button>
+      </div>
+    </div>
+    <!---------script modal ----->
+    <script src="/js/modal.js"></script>
   </body>
 </html>
