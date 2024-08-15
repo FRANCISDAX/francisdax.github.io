@@ -1,0 +1,9 @@
+Desktop : Escritorio.
+Tablet : Tabletas.
+Smartphone : Móviles.
+
+320px - 480px : Dispositivos Móviles.
+481px - 768px : iPads y Tabletas.
+769px - 1024px : Portátiles o Laptops.
+1025px - 1200px : Escritorio o Pantallas Grandes.
+1201px y más : Pantallas Extragrandes, TV.

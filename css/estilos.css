@@ -1,4 +1,4 @@
-/* Configuración Global de Colores */
+/* Configuración de Colores */
 :root {
     --colorBackground: #eee7dd;
     --colorMarca: #bc4e9c;
@@ -34,7 +34,7 @@ body {
     color: var(--colorTitulo);
     font-size: 40px;
     text-align: center;
-    margin: 40px 40px;
+    margin: 40px 0px;
 }
 
 /* Clase Ir hacia arriba de la Página Principal */
@@ -118,53 +118,41 @@ header {
     background-size: cover;
  */ }
 
-.background_Inicio {
+ /* Background de las Páginas */
+ .bg {
     height: 100vh;
     height: 100dvh;
-    background: transparent url('../img/portada.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.background_Nosotros {
-    height: 100vh;
-    height: 100dvh;
-    background: transparent url('../img/portada_2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    &.bg__Inicio {
+        background: transparent url('../img/portada.jpg') no-repeat;
+        background-size: cover;
+    }
 
-.background_Servicios {
-    height: 100vh;
-    height: 100dvh;
-    background: transparent url('../img/portada_3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    &.bg__Nosotros {
+        background: transparent url('../img/portada_2.jpg') no-repeat;
+        background-size: cover;
+    }
 
-.background_Campanias {
-    height: 100vh;
-    height: 100dvh;
-    background: transparent url('../img/portada_4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    &.bg__Servicios {
+        background: transparent url('../img/portada_3.jpg') no-repeat;
+        background-size: cover;
+    }
 
-.background_Clientes {
-    height: 100vh;
-    height: 100dvh;
-    background: transparent url('../img/portada_5.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    &.bg__Campanias {
+        background: transparent url('../img/portada_4.jpg') no-repeat;
+        background-size: cover;
+    }
 
-.background_Contactos {
-    height: 100vh;
-    height: 100dvh;
-    background: transparent url('../img/portada_6.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    &.bg__Clientes {
+        background: transparent url('../img/portada_5.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    &.bg__Contactos {
+        background: transparent url('../img/portada_6.jpg') no-repeat;
+        background-size: cover;
+    }
+ }
 
 header nav {
     display: flex;
@@ -302,156 +290,6 @@ header .textos_header .botones {
     margin-left: -85px;
 }
 
-/* Página Nosotros - Area Acerca de Nosotros */
-main .contenedorNosotros {
-    padding: 10px 120px;
-    width: auto;
-    height: 1150px;
-    margin: auto;
-    background: var(--colorBlanco);   
-}
-
-.contenedor-nosotros {
-    display: flex;
-    height: 100%;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.contenedor-nosotros img {
-    display: flex;
-    height: 100%;
-}
-
-.contenedor-nosotros .img .img1 {
-    width: 600px;
-    height: 600px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.contenedor-nosotros .img .img2 {
-    width: 350px;
-    height: 410px;
-    margin-top: -490px;
-    margin-left: 310px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.contenedor-nosotros .img .img3 {
-    width: 550px;
-    height: 280px;
-    margin-top: -150px;
-    margin-left: 50px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.contenido-textos {
-    font-family: Tahoma;
-    font-size: 18px;
-    text-align: justify;
-    letter-spacing: 1.5px;
-    line-height: 26px;
-}
-
-.contenido-textos p {
-    margin: 10px 0px 10px 0;
-}
-
-.contenido-textos li{
-    margin-left: 22px;
-    margin-top: 10px;
-}
-
-/* Página Nosotros - Area Nuestro Equipo de Trabajo */
-main .contenedorEquipo {
-    padding: 10px 120px;
-    width: auto;
-    height: 840px;
-    margin: auto;
-    background: var(--colorBackground);   
-}
-
-.contenedor-equipo {
-    display: flex;
-    height: 100%;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.contenedor-equipo img {
-    display: flex;
-    height: 100%;
-}
-
-.contenedor-equipo .img .img1 {
-    width: 600px;
-    height: 600px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.contenedor-equipo .img .img2 {
-    width: 350px;
-    height: 410px;
-    margin-top: -490px;
-    margin-left: 310px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.contenedor-equipo .img .img3 {
-    width: 550px;
-    height: 280px;
-    margin-top: -150px;
-    margin-left: 50px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.contenido-textos .card {
-    display: flex;
-    margin-top: 30px;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 30px; 
-}
-
-.contenido-textos .card .avatar {
-    background-color: var(--colorAcento);
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 145px;
-    border: 2px solid;
-    border-radius: 10px;
-    box-shadow: 8px 8px 8px var(--colorBordes);
-    padding: 8px;
-    letter-spacing: 0.5px;
-    line-height: 6px;
-}
-
-.contenido-textos .card .avatar h5 {
-    font-size: 1rem;
-    text-wrap: nowrap;  
-}
-
-.contenido-textos .card .avatar p {
-    font-size: 0.8rem;  
-}
-
-.contenido-textos .card .avatar img {
-    position: relative;
-    object-fit: cover;
-    top: -35px;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: 2px solid var(--colorBordes);
-}
-
 /* Página Servicios */
 main .contenedorServicios {
     padding: 0 150px;
@@ -459,171 +297,6 @@ main .contenedorServicios {
     height: 100vh;
     margin: auto;
     background: var(--colorAcento);
-}
-
-/* Página Inicio - Area Galería de Mascotas */
-main .contenedorGaleriaMascotas {
-    padding: 10px 150px;
-    width: auto;
-    height: auto;
-    margin: auto;
-    background: var(--colorBlanco);
-}
-
-.galeriaClientes {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagenClientes {
-    width: 24%;
-    height: 200px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-}
-
-.imagenClientes > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: all 500ms ease-out;
-}
-
-.imagenClientes > img:hover {
-    transform: scale(1.3);
-}
-
-/* Página Inicio - Area Galería de Videos */
-main .contenedorGaleriaVideos {
-    padding: 10px 150px;
-    width: auto;
-    height: auto;
-    margin: auto;
-    background: var(--colorBackground);
-}
-
-/* Página de Clientes */
-main .contenedorClientes {
-    width: 100%;
-    margin: auto;
-    height: 100vh;
-    background: var(--colorBlanco);
-}
-
-main .contenedorClientes h1{
-    margin-top: 80px;
-}
-
-/* Página de Clientes - Area Clientes Satisfechos */
-main .contenedorClientes .contenedor-clientes {
-    position: relative;
-    margin-top: 150px;
-    margin-left: 45%;
-    width: 150px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
-    object-fit: cover;
-}
-
-@keyframes animate {
-    0% {
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100% {
-        transform: perspective(1000px) rotateY(360deg);
-    }
-}
-
-main .contenedorClientes .contenedor-clientes:hover {
-    animation-play-state: paused;
-}
-
-main .contenedorClientes .contenedor-clientes span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 36deg)) translateZ(350px);
-    -webkit-box-reflect: below 2px linear-gradient( transparent, transparent, rgba( 4, 4, 4, 0.267));
-}
-
-main .contenedorClientes .contenedor-clientes span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 4px double rgb(0, 0, 0);
-    border-radius: 15px;
-}
-
-main .contenedorClientes .contenedor-clientes span img:hover {
-    transform: translateY(-6px);
-}
-
-/* Página de Clientes - Area Testimonios */
-main .contenedorTestimonios {
-    padding-top: 0.75px;
-    height: 100vh;
-    background: var(--colorBackground);   
-}
-
-main .contenedorTestimonios .card {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: center;
-}
-
-main .contenedorTestimonios .card .avatar {
-    background-color: var(--colorAcento);
-    text-align: center;
-    width: 200px;
-    height: 300px;
-    border: 2px solid;
-    border-radius: 10px;
-    box-shadow: 8px 8px 8px var(--colorBordes);
-    padding: 8px;
-    letter-spacing: 0.5px;
-    line-height: 25px;
-}
-
-main .contenedorTestimonios .card .avatar h5 {
-    font-size: 1rem;
-    text-wrap: nowrap;  
-}
-
-main .contenedorTestimonios .card .avatar p {
-    font-size: 0.8rem;
-    line-height: 15px;  
-}
-
-main .contenedorTestimonios .card .avatar img {
-    position: relative;
-    object-fit: cover;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: 2px solid var(--colorBordes);
-}
-
-/* Página Contáctos */
-main .contenedorContáctos {
-    padding: 0 150px;
-    width: auto;
-    height: 100vh;
-    margin: auto;
-    background: var(--colorAcento);
-    
 }
 
 /* Footer */
@@ -639,7 +312,7 @@ footer .grupo-1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;   
+    padding: 15px 0px;   
 }
 
 footer .grupo-1 .box figure {
@@ -663,6 +336,7 @@ footer .grupo-1 .box h2 {
 footer .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 footer .grupo-1 .box .redesSociales a {
@@ -682,11 +356,27 @@ footer .grupo-1 .box .redesSociales a img {
 }
 
 footer .grupo-2 {
-    padding: 15px 10px;
+    padding: 0 10px;
+    padding-bottom: 20px;
     text-align: center;
     color: var(--colorBlanco);
 }
 
 footer .grupo-2 small {
     font-size: 20px;
+}
+
+/* Diseño Responsive - Para PCs */
+@media screen and ( max-width: 900px) {
+    
+}
+
+/* Diseño Responsive - Para Tablets */
+@media screen and ( max-width: 700px) {
+    
+}
+
+/* Diseño Responsive - Para Móviles */
+@media screen and ( max-width: 600px) {
+    
 }
