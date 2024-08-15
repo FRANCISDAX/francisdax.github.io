@@ -64,11 +64,12 @@ main .contenedor_campañas {
                 height: 345px;
                 object-fit: cover;
                 display: block;
-                transition: all 500ms ease-out;
+                transition: 400ms;
             }
     
             & > img:hover {
-                transform: scale(1.1);
+                filter: grayscale(1);
+                transform: scale(1.03);
             }
         }            
     }
