@@ -335,9 +335,10 @@ footer .grupo-1 .box h2 {
 }
 
 footer .grupo-1 .box p {
-    color: #efefef;
+    font-family: segoe;
+    color: var(--colorTitulo);
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
 
     &> a {
