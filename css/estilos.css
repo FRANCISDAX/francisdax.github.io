@@ -10,6 +10,7 @@
     --colorBlanco: #fff;
     --colorAcento: #f2f2f2;
     --colorBordes: #444;
+    --colorError: #c70039;
 }
 
 /* Reseteo de Estilos */
@@ -336,7 +337,14 @@ footer .grupo-1 .box h2 {
 footer .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
+
+    &> a {
+        color: var(--colorAcento);
+        text-decoration: none;
+    }
+    
 }
 
 footer .grupo-1 .box .redesSociales a {
@@ -368,7 +376,14 @@ footer .grupo-2 small {
 
 /* Diseño Responsive - Para PCs */
 @media screen and ( max-width: 900px) {
+    footer .grupo-1 {
+        grid-template-columns: 1fr;       
+    }
     
+    footer .grupo-2 {
+        display: flex;
+        flex-wrap: wrap;       
+    }
 }
 
 /* Diseño Responsive - Para Tablets */

@@ -51,6 +51,7 @@
     </header>
     <!-- Contenedor Principal  -->
     <main class="contenedor_contactos">
+        <h2 class="titulo">Agende su Cita</h2>
         <!-- Contactos -->
          <div class="caja">
             <h2>Contáctanos</h2>
@@ -69,26 +70,46 @@
                     <p>123 - Nombre de la Calle - Distrito</p>
                 </div>
                 <div class="form">
-                    <form>
+                    <form id="formulario" action="#">
                         <ul>
                           <li>
                             <label for="nombres"></label>
-                            <input type="text" id="nombres" name="user_nombres" placeholder="Nombres"/>
+                            <input type="text" 
+                                id="nombres" 
+                                name="user_nombres" 
+                                placeholder="Nombres"
+                                required
+                                minlength="3"
+                                autofocus/>
                           </li>
                           <li>
                             <label for="email"></label>
-                            <input type="email" id="email" name="user_email" placeholder="Correo Electrónico"/>
+                            <input type="email" 
+                                id="email" 
+                                name="user_email"
+                                minlength="3" 
+                                placeholder="Correo Electrónico"
+                                required/>
                           </li>
                           <li>
                             <label for="asunto"></label>
-                            <input type="text" id="asuntoname" name="user_asunto" placeholder="Asunto" />
+                            <input type="text" 
+                                id="asuntoname" 
+                                name="user_asunto"
+                                minlength="3" 
+                                placeholder="Asunto"
+                                required/>
                           </li>
                           <li>
                             <label for="msg"></label>
-                            <textarea id="msg" name="user_message" placeholder="Mensaje"></textarea>
+                            <textarea id="msg" 
+                                name="user_message" 
+                                placeholder="Mensaje"></textarea>
                           </li>
-                          <li class="button">
-                            <button type="submit">Enviar</button>
+                          <li>
+                            <button type="submit">
+                                Enviar su Cita
+                            </button>
                           </li>
                         </ul>
                     </form>
@@ -125,9 +146,11 @@
             </div>
             <div class="box">
                 <h2>ENLACES</h2>
-                <p>Servicios</p>
-                <p>Campañas</p>
-                <p>Clientes</p>
+                <p><a href="/index.html">Inicio</a></p>
+                <p><a href="/pages/nosotros.html">Nosotros</a></p>
+                <p><a href="/pages/campañas.html">Campañas</a></p>
+                <p><a href="/pages/clientes.html">Clientes</a></p>
+                <p><a href="#">Contactos</a></p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
