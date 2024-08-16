@@ -4,32 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebSite PAGC</title>
-    <link rel="website icon" href="/img/logo.jpg" type="jpg" />
-    <link rel="stylesheet" href="/css/sub-estilos.css" />
-  </head>
-  <!--Header -->
-  <header>
-    <nav>
-      <img
-        class="logo"
-        src="/img/logo.jpg"
-        width="60px"
-        height="60px"
-        alt="Logo"
-      />
 
-      <!--Header-Menu -->
-      <div class="menu">
-        <a href="/index.html" class="play-sound">Inicio</a>
-        <a href="/pages/nosotros.html" class="play-sound">Nosotros</a>
-        <a href="#" class="play-sound">Servicios ▼</a>
-        <a href="/pages/campañas.html" class="play-sound">Campañas</a>
-        <a href="/pages/clientes.html" class="play-sound">Clientes</a>
-        <a href="/pages/contactos.html" class="play-sound">Contactos</a>
-      </div>
-    </nav>
-  </header>
+    <!-------fuente - google fonts-------->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="website icon" href="/img/logo.jpg" type="jpg" />
+    <link rel="stylesheet" href="/css/sub-estilos/medicinaGeneral.css" />
+  </head>
+
   <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.jpg" alt="logo" width="60px" height="60px" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li class="submenu-contenido">
+            <a href="#">Servicios</a>
+            <ul class="submenu">
+              <li><a href="#">Medicina General</a></li>
+              <li><a href="#">Medicina Preventiva</a></li>
+              <li><a href="#">Análisis Clínicos</a></li>
+              <li><a href="#">Cirugías de esterilización</a></li>
+              <li><a href="#">Cirugías de castración</a></li>
+              <li><a href="#">Servicio de SENASA</a></li>
+              <li><a href="#">La desparasitación interna y externa</a></li>
+              <li><a href="#">Chequeo veterinario</a></li>
+              <li><a href="#">Vacunación y cirugía</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Campañas</a></li>
+          <li><a href="#">Conócenos</a></li>
+          <li><a href="#">Galeria de Pacientes</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
       <h1>Medicina general veterinaria</h1>
 
@@ -43,7 +59,7 @@
         </ul>
       </div>
 
-      <!--section-text -->
+      <!--Section-text -->
       <section class="seccion-principal">
         <p class="text-principal">
           Nuestra clínica dispone de dos consultas equipadas para valorar de
@@ -72,7 +88,7 @@
       </div>
     </main>
 
-    <!-- ---- modal -->
+    <!-- ---- Modal -->
     <div id="calendarioModal" class="modal">
       <div class="contenedor-modal">
         <span class="cerrar">&times;</span>
@@ -102,7 +118,61 @@
         <button id="guardarBtn" class="btnModalGuardar">Guardar</button>
       </div>
     </div>
+
+    <!--------Imagen-cita---->
+    <div class="imagenCita">
+      <img src="/img/img_cita.png" alt="imagen-cita" />
+    </div>
+
+    <!--------Footer---->
+    <footer class="footerContenedor">
+      <div class="footerBlock1">
+        <h3>Fundación.<span>Pagc</span></h3>
+        <img src="/img/logo.jpg" alt="logo" />
+        <p class="footerCopyright">
+          <strong>© Fundación PAGC 2024.</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footerBlock2">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>CL Samoa 327</span>La molina</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>999888777</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>fundacionPAGC@outlook.com</p>
+        </div>
+      </div>
+
+      <div class="footerBlock3">
+        <p class="footerInfo">
+          <span>Horarios</span>
+          <strong>Fundación PAGC</strong> nuestra atención es de lunes a viernes
+          desde las 9:30 a 19:30 - sábados 9:30 a 12:00 Fuera de este horario, y
+          para casos clínicos, será atendido en el teléfono de urgencias.
+        </p>
+        <div class="footerIconos">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
     <!---------script modal ----->
     <script src="/js/modal.js"></script>
+
+    <!-----font awesome icons CDN-->
+    <script
+      src="https://kit.fontawesome.com/848a6f3792.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
