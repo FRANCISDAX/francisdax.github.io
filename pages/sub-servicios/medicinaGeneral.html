@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite PAGC</title>
+
+    <!-------fuente - google fonts-------->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="website icon" href="/img/logo.jpg" type="jpg" />
+    <link rel="stylesheet" href="/css/sub-estilos/medicinaGeneral.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.jpg" alt="logo" width="60px" height="60px" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li class="submenu-contenido">
+            <a href="#">Servicios</a>
+            <ul class="submenu">
+              <li><a href="#">Medicina General</a></li>
+              <li><a href="#">Medicina Preventiva</a></li>
+              <li><a href="#">Análisis Clínicos</a></li>
+              <li><a href="#">Cirugías de esterilización</a></li>
+              <li><a href="#">Cirugías de castración</a></li>
+              <li><a href="#">Servicio de SENASA</a></li>
+              <li><a href="#">La desparasitación interna y externa</a></li>
+              <li><a href="#">Chequeo veterinario</a></li>
+              <li><a href="#">Vacunación y cirugía</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Campañas</a></li>
+          <li><a href="#">Conócenos</a></li>
+          <li><a href="#">Galeria de Pacientes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Medicina general veterinaria</h1>
+
+      <!--Slider -->
+      <div class="slider-principal">
+        <ul>
+          <li><img src="/img/img3-slide.jpeg" alt="slide1" /></li>
+          <li><img src="/img/img2-slide.jpg" alt="slide2" /></li>
+          <li><img src="/img/img1-slide.jpg" alt="slide3" /></li>
+          <li><img src="/img/img4-slide.jpg" alt="slide4" /></li>
+        </ul>
+      </div>
+
+      <!--Section-text -->
+      <section class="seccion-principal">
+        <p class="text-principal">
+          Nuestra clínica dispone de dos consultas equipadas para valorar de
+          forma metódica y completa a tu mascota, Además contamos con los medios
+          y los conocimientos necesarios para que nuestro paciente se sienta
+          cómodo y seguro durante la consulta.
+        </p>
+        <br />
+        <p class="text-principal">
+          Estamos capacitados para un manejo correcto y amigable, nuestro
+          objetivo es que tu mascota siempre cuente con un bienestar físico y
+          mental durante la exploración y diagnóstico. Así mismo realizamos el
+          seguimiento de el estado de salud de tu mascota hasta su alta.
+        </p>
+      </section>
+      <div class="seccionBtnCita">
+        <img
+          src="/img/icono-calendario.png"
+          alt="icono"
+          height="50px"
+          width="50px"
+        />
+
+        <!-- Botón abrir el modal -->
+        <button id="abrirModalBtn" class="btn-efecto">Pide tu Cita</button>
+      </div>
+    </main>
+
+    <!-- ---- Modal -->
+    <div id="calendarioModal" class="modal">
+      <div class="contenedor-modal">
+        <span class="cerrar">&times;</span>
+        <h2>Agendar Cita</h2>
+
+        <label for="nombrePaciente">Nombre del Paciente: </label>
+        <input
+          type="text"
+          id="nombrePaciente"
+          placeholder="Ingresa el nombre"
+          maxlength="20"
+          required
+        />
+
+        <label for="celularPaciente">Teléfono: </label>
+        <input
+          type="tel"
+          id="celularPaciente"
+          placeholder="Ingresa el teléfono"
+          maxlength="20"
+          required
+        />
+
+        <label for="citaFechaHora">Fecha y Hora: </label>
+        <input type="datetime-local" id="citaFechaHora" required />
+
+        <button id="guardarBtn" class="btnModalGuardar">Guardar</button>
+      </div>
+    </div>
+
+    <!--------Imagen-cita---->
+    <div class="imagenCita">
+      <img src="/img/img_cita.png" alt="imagen-cita" />
+    </div>
+
+    <!--------Footer---->
+    <footer class="footerContenedor">
+      <div class="footerBlock1">
+        <h3>Fundación.<span>Pagc</span></h3>
+        <img src="/img/logo.jpg" alt="logo" />
+        <p class="footerCopyright">
+          <strong>© Fundación PAGC 2024.</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footerBlock2">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>CL Samoa 327</span>La molina</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>999888777</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>fundacionPAGC@outlook.com</p>
+        </div>
+      </div>
+
+      <div class="footerBlock3">
+        <p class="footerInfo">
+          <span>Horarios</span>
+          <strong>Fundación PAGC</strong> nuestra atención es de lunes a viernes
+          desde las 9:30 a 19:30 - sábados 9:30 a 12:00 Fuera de este horario, y
+          para casos clínicos, será atendido en el teléfono de urgencias.
+        </p>
+        <div class="footerIconos">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!---------script modal ----->
+    <script src="/js/modal.js"></script>
+
+    <!-----font awesome icons CDN-->
+    <script
+      src="https://kit.fontawesome.com/848a6f3792.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
