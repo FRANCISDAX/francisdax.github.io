@@ -6,8 +6,13 @@
     <title>WebSite PAGC</title>
     <link rel="website icon" href="../img/logo.jpg" type="jpg">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="/css/contactos.css">
+    <!-- Enlaza Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Enlaza Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body class="background_Contactos">
+<body class="bg bg__Contactos">
     <!-- Header  -->
     <header>
         <!-- Barra de Navegación  -->
@@ -45,61 +50,75 @@
         </section>
     </header>
     <!-- Contenedor Principal  -->
-    <main>
-        <!-- Nosotros -->
-        <section class="contenedorNosotros" id="nosotros">
-            <h1 class="titulo">Acerca de Nosotros</h1>
-            <div class="contenedor-nosotros">
-                <div class="img">
-                    <img src="img/img1.jpg" alt="imagén 1" class="img1">
-                    <img src="img/img2.jpg" alt="imagén 2" class="img2">
-                    <img src="img/img3.jpg" alt="imagén 3" class="img3">
+    <main class="contenedor_contactos">
+        <h2 class="titulo">Agende su Cita</h2>
+        <!-- Contactos -->
+         <div class="caja">
+            <h2>Contáctanos</h2>
+            <div class="contactos">
+                <div class="contactos_1">
+                    <i class="fas fa-envelope"></i>
+                    <span>Correo Electrónico</span>
+                    <p>Envianos un mensaje ahora mismo a<br>
+                    fundacionPAGC@gmail.com</p>
+                    <i class="fas fa-phone"></i>
+                    <span>Teléfonos</span>
+                    <p>Llámanos para cualquier consulta<br>
+                    +51 952 295 188</p>
+                    <i class="material-icons">place</i>
+                    <span>Oficinas</span>
+                    <p>123 - Nombre de la Calle - Distrito</p>
                 </div>
-                <div class="contenido-textos">
-                    <h3>¿ Quiénes Somos ?</h3>
-                    <p>Somos una empresa Veterinaria que ofrecemos una asistencia completa y de calidad a tu mascota. 
-                    Nuestro principal objetivo es mantener la salud y el bienestar de nuestros animales y ayudarlos a 
-                    restablecerse cuando están enfermos. Para ello, contamos con un personal altamente calificado a 
-                    disposición del cliente.</p>
-                    <p>Fundación PAGC está conformado por un grupo de jóvenes voluntarios, quienes promovemos campañas 
-                    masivas de esterilización y castración a costo social a nivel de Lima y provincias.</p>
-                    <h3>Nuestro Equipo</h3>
-                    <section class="card">
-                        <div class="avatar">
-                            <img src="img/eqp1.png" alt="avatar">
-                            <h5>Javier Jarama</h5>
-                            <p>Médico Veterinario</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp2.png" alt="avatar">
-                            <h5>María Lozano</h5>
-                            <p>Asistente Médico</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp3.png" alt="avatar" >
-                            <h5>Carol Linares</h5>
-                            <p>Médico Veterinario</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp4.png" alt="avatar">
-                            <h5>Julia Sifuentes</h5>
-                            <p>Administrador</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp5.png" alt="avatar">
-                            <h5>Sofía Cárdenas</h5>
-                            <p>Asistente Médico</p>
-                        </div>
-                        <div class="avatar">
-                            <img src="img/eqp1.png" alt="avatar">
-                            <h5>Johan Reyna</h5>
-                            <p>Desarrollador Web</p>
-                        </div>
-                    </section>
+                <div class="form">
+                    <form id="formulario" action="#">
+                        <ul>
+                          <li>
+                            <label for="nombres"></label>
+                            <input type="text" 
+                                id="nombres" 
+                                name="user_nombres" 
+                                placeholder="Nombres"
+                                required
+                                minlength="3"
+                                autofocus/>
+                          </li>
+                          <li>
+                            <label for="email"></label>
+                            <input type="email" 
+                                id="email" 
+                                name="user_email"
+                                minlength="3" 
+                                placeholder="Correo Electrónico"
+                                required/>
+                          </li>
+                          <li>
+                            <label for="asunto"></label>
+                            <input type="text" 
+                                id="asuntoname" 
+                                name="user_asunto"
+                                minlength="3" 
+                                placeholder="Asunto"
+                                required/>
+                          </li>
+                          <li>
+                            <label for="msg"></label>
+                            <textarea id="msg" 
+                                name="user_message" 
+                                placeholder="Mensaje"></textarea>
+                          </li>
+                          <li>
+                            <button type="submit">
+                                Enviar su Cita
+                            </button>
+                          </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
-        </section>
+            <div class="formulario">
 
+            </div>
+         </div>
     </main>
 
     <!-- Botán Ir Arriba -->
@@ -118,15 +137,20 @@
                 </figure>
             </div>
             <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <h2>💻 SOBRE NOSOTROS</h2>
+                <p>José Luis Areche Chagua.</p>
+                <p>Hermel Hermez Jaramillo Pacaya.</p>
+                <p>Sergio Andre Terrazas Miranda.</p>
+                <p>Franklin Eduardo Paredes Arevalo.</p>
+                <p>Johan Franz Reyna Avalos.</p>
             </div>
             <div class="box">
                 <h2>ENLACES</h2>
-                <p>Servicios</p>
-                <p>Campañas</p>
-                <p>Clientes</p>
+                <p><a href="/index.html">Inicio</a></p>
+                <p><a href="/pages/nosotros.html">Nosotros</a></p>
+                <p><a href="/pages/campañas.html">Campañas</a></p>
+                <p><a href="/pages/clientes.html">Clientes</a></p>
+                <p><a href="#">Contactos</a></p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
@@ -139,7 +163,8 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2024 <b>Grupo 03 ELITEC</b> - Todos los Derechos Reservados</small>
+            <small>&copy; 2024 <b>Grupo 02 ⚡ ELITEC</b> - Todos los Derechos Reservados</small
+                >
         </div>
     </footer>
 

@@ -8,3 +8,8 @@ document.querySelectorAll('.play-sound').forEach(function(element) {
         }, 250);
     });
 });
+
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("¡Su cita ha sido enviado!");
+});
