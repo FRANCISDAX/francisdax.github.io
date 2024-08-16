@@ -118,3 +118,47 @@ nav {
     white-space: nowrap;
     
 }
+
+/* Main */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+/* Titulo */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #642a73;
+    font-size: 24px;
+}
+
+/* texto e imagenes */
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.texto-block {
+    padding: 15px;
+    font-family: tahoma;
+    letter-spacing: 1.5px;
+    line-height: 26px;
+}
+
+.imagen-block img {
+    max-width: 100%;
+    border-radius: 8px;
+}
