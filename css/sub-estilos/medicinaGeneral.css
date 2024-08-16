@@ -468,23 +468,12 @@ footer {
         margin-top: 120px;
         
     }
-  
-}
 
-@media (max-height:800px) {
-    footer {
-        position: static;
-    }
-}
-
-
-@media (max-width: 880px) {
     .footerContenedor .footerBlock1, 
     .footerContenedor .footerBlock2, 
     .footerContenedor .footerBlock3 {
         display: block;
         width: 100%;
-        margin-bottom: 40px;
         text-align: center;
     }
 
@@ -495,4 +484,12 @@ footer {
     .footerContenedor .footerBlock2 i {
         margin-left: 0;
     }
-}       
+  
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+
