@@ -204,3 +204,49 @@ h2 {
     margin-top: 80px;
     border: 1px solid black;
 }
+
+/* analisis-iconos-descripción */
+
+.seccion-beneficios {
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 50px;
+}
+
+.contenedor-iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contenido-iconos {
+    flex: 1 1 200px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 220px;
+    text-align: center;
+}
+
+.contenido-iconos i {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .contenedor-analisis {
+        margin-left: 130px;
+    }
+
+    .seccion-contenido-imagen,
+    .contenedor-iconos {
+        margin-left: 130px;
+    }
+
+    .contenedor-analisis,
+    .seccion-contenido-imagen,
+    .contenedor-iconos {
+        flex-direction: column;
+
+    }
+}
