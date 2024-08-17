@@ -156,3 +156,29 @@ h2 {
 .contenido-analisis img:hover {
     transform: scale(1.1);
 }
+
+/* Ficha-anáisis-botón */
+
+.ficha-analisis-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.ficha-analisis-boton a {
+    background-color: #642a73;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.ficha-analisis-boton a:hover {
+    background-color: #23655c;
+}
+
+.ficha-analisis-boton a:active {
+    transform: translateY(5px);
+}
