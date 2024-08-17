@@ -170,7 +170,49 @@
           </div>
         </div>
       </div>
+
+      <!--Formulario-->
+      <div class="contenedor-form">
+        <section class="seccion-form">
+          <h2>Contáctanos</h2>
+          <form id="form">
+            <div class="contenido-form">
+              <label for="to_name">Nombres</label>
+              <input type="text" id="to_name" name="to_name" />
+            </div>
+            <div class="contenido-form">
+              <label for="from_name">Apellidos</label>
+              <input type="text" id="from_name" name="from_name" />
+            </div>
+            <div class="contenido-form">
+              <label for="reply_to">Email</label>
+              <input type="email" id="reply_to" name="reply_to" />
+            </div>
+            <div class="contenido-form">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button id="button" type="submit" value="enviar">Enviar</button>
+          </form>
+        </section>
+      </div>
     </main>
+
+    <!-- EmailJS script -->
+
+    <script src="/js/email.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "iETwAnz_woR3hlxVz",
+        });
+      })();
+    </script>
 
     <!-----font awesome icons CDN-->
     <script
