@@ -119,3 +119,40 @@ nav {
     white-space: nowrap;
 
 }
+
+/* Main */
+
+/* Seccion-análisis */
+
+h1,
+h2 {
+    text-align: center;
+    color: #642a73;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.contenedor-analisis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contenido-analisis {
+    margin: 15px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.contenido-analisis img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px #642a73;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.contenido-analisis img:hover {
+    transform: scale(1.1);
+}
