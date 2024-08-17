@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite PAGC</title>
+
+    <!-------fuente - google fonts-------->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/css/sub-estilos/analisisClinico.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.jpg" alt="logo" width="60px" height="60px" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li class="submenu-contenido">
+            <a href="#">Servicios</a>
+            <ul class="submenu">
+              <li><a href="#">Medicina General</a></li>
+              <li><a href="#">Medicina Preventiva</a></li>
+              <li><a href="#">Análisis Clínicos</a></li>
+              <li><a href="#">Cirugías de esterilización</a></li>
+              <li><a href="#">Cirugías de castración</a></li>
+              <li><a href="#">Servicio de SENASA</a></li>
+              <li><a href="#">La desparasitación interna y externa</a></li>
+              <li><a href="#">Chequeo veterinario</a></li>
+              <li><a href="#">Vacunación y cirugía</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Campañas</a></li>
+          <li><a href="#">Conócenos</a></li>
+          <li><a href="#">Galeria de Pacientes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!---- Main -->
+    <main>
+      <h1>Análisis Clínicos Veterinarios</h1>
+
+      <div class="contenedor-analisis">
+        <!--Analisis-1-->
+        <div class="contenido-analisis">
+          <img
+            src="/img/hema.jpeg"
+            alt="Hematología"
+            width="120"
+            height="120"
+          />
+          <p>HEMATOLOGÍA</p>
+        </div>
+
+        <!--Analisis-2-->
+        <div class="contenido-analisis">
+          <img src="/img/bio.jpeg" alt="Bioquímica" width="120" height="120" />
+          <p>BIOQUÍMICA</p>
+        </div>
+
+        <!--Analisis-3-->
+        <div class="contenido-analisis">
+          <img
+            src="/img/micro.jpeg"
+            alt="Microbiología"
+            width="120"
+            height="120"
+          />
+          <p>MICROBIOLOGÍA</p>
+        </div>
+
+        <!--Analisis-4-->
+        <div class="contenido-analisis">
+          <img
+            src="/img/derma.jpeg"
+            alt="Dermatología"
+            width="120"
+            height="120"
+          />
+          <p>DERMATOLOGÍA</p>
+        </div>
+
+        <!--Analisis-5-->
+        <div class="contenido-analisis">
+          <img
+            src="/img/parasi.jpg"
+            alt="Parasitología"
+            width="120"
+            height="120"
+          />
+          <p>PARASITOLOGÍA</p>
+        </div>
+      </div>
+      <div class="ficha-analisis-boton">
+        <a
+          href="/docs/formato_analisis.pdf"
+          download="ficha-solicitud-analisis-pdf"
+        >
+          Descargar ficha de solicitud de análisis
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+
+      <!--analisis-imagenes-->
+      <div class="seccion-contenido-imagen">
+        <div class="imagen-contenido">
+          <img
+            src="/img/laborat.png"
+            alt="Laboratorio de alta tecnología"
+            width="200"
+            height="200"
+          />
+          <p>Laboratorio de alta tecnología</p>
+        </div>
+        <div class="imagen-contenido">
+          <img
+            src="/img/profes.jpg"
+            alt="Profesionales calificados"
+            width="200"
+            height="200"
+          />
+          <p>Profesionales calificados</p>
+        </div>
+        <div class="imagen-contenido">
+          <img
+            src="/img/compromis.jpg"
+            alt="Compromiso y profesionalismo"
+            width="200"
+            height="200"
+          />
+          <p>Compromiso y profesionalismo</p>
+        </div>
+      </div>
+
+      <!--analisis-iconos-descripción-->
+
+      <div class="seccion-beneficios">
+        <h2>Beneficios que brindamos</h2>
+        <div class="contenedor-iconos">
+          <div class="contenido-iconos">
+            <i class="fa-solid fa-flask"></i>
+            <p>El más amplio menú de prueba</p>
+          </div>
+          <div class="contenido-iconos">
+            <i class="fa-solid fa-user-doctor"></i>
+            <p>Realizado por tecnólogos médicos.</p>
+          </div>
+          <div class="contenido-iconos">
+            <i class="fa-brands fa-wpforms"></i>
+            <p>Control de calidad integrado en nuestros análisis.</p>
+          </div>
+          <div class="contenido-iconos">
+            <i class="fa-solid fa-person"></i>
+            <p>Asesoramiento clínico por médicos veterinarios.</p>
+          </div>
+          <div class="contenido-iconos">
+            <i class="fa-solid fa-vials"></i>
+            <p>Servicio gratuito de recolección de muestras.</p>
+          </div>
+          <div class="contenido-iconos">
+            <i class="fa-solid fa-file"></i>
+            <p>Resultados rápidos en línea y WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Formulario-->
+      <div class="contenedor-form">
+        <section class="seccion-form">
+          <h2>Contáctanos</h2>
+          <form id="form">
+            <div class="contenido-form">
+              <label for="to_name">Nombres</label>
+              <input type="text" id="to_name" name="to_name" />
+            </div>
+            <div class="contenido-form">
+              <label for="from_name">Apellidos</label>
+              <input type="text" id="from_name" name="from_name" />
+            </div>
+            <div class="contenido-form">
+              <label for="reply_to">Email</label>
+              <input type="email" id="reply_to" name="reply_to" />
+            </div>
+            <div class="contenido-form">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button id="button" type="submit" value="enviar">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!--------Footer---->
+    <footer class="footerContenedor">
+      <div class="footerBlock1">
+        <h3>Fundación.<span>Pagc</span></h3>
+        <img src="/img/logo.jpg" alt="logo" />
+        <p class="footerCopyright">
+          <strong>© Fundación PAGC 2024.</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footerBlock2">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>CL Samoa 327</span>La molina</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>999888777</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>fundacionPAGC@outlook.com</p>
+        </div>
+      </div>
+
+      <div class="footerBlock3">
+        <p class="footerInfo">
+          <span>Horarios</span>
+          <strong>Fundación PAGC</strong> nuestra atención es de lunes a viernes
+          desde las 9:30 a 19:30 - sábados 9:30 a 12:00 Fuera de este horario, y
+          para casos clínicos, será atendido en el teléfono de urgencias.
+        </p>
+        <div class="footerIconos">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- EmailJS script -->
+
+    <script src="/js/email.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "iETwAnz_woR3hlxVz",
+        });
+      })();
+    </script>
+
+    <!-----font awesome icons CDN-->
+    <script
+      src="https://kit.fontawesome.com/848a6f3792.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
