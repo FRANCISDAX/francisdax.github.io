@@ -271,6 +271,7 @@ header .textos_header {
 }
 
 header .textos_header h1 {
+    flex-wrap: wrap;
     font-family: Verdana;
     font-size: 50px;
     color:var(--colorSecundario);
@@ -278,6 +279,7 @@ header .textos_header h1 {
 }
 
 header .textos_header h2 {
+    flex-wrap: wrap;
     font-family: Geneva;
     font-size: 48px;
     color: var(--colorPrimario);
@@ -375,6 +377,36 @@ footer .grupo-2 small {
     font-size: 20px;
 }
 
+/* Estilos para el menú hamburguesa */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menuNavegación {
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+
+}
+
+
 /* Diseño Responsive - Para PCs */
 @media screen and ( max-width: 900px) {
     footer .grupo-1 {
@@ -388,11 +420,81 @@ footer .grupo-2 small {
 }
 
 /* Diseño Responsive - Para Tablets */
-@media screen and ( max-width: 700px) {
+@media screen and ( max-width: 768px) {
+    header nav .logo {
+        margin-left: 20px;
+    }
+ 
+    header .textos_header {
+        top: 25%;
+    }
     
+    .footer {
+        padding-left: 20px;
+    }
+
+    .menuNavegación {
+        visibility: hidden;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 300px;
+        background-color: var(--colorAcento);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    nav.active .menuNavegación {
+        visibility: visible;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Animación del icono hamburguesa */
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
 }
 
 /* Diseño Responsive - Para Móviles */
-@media screen and ( max-width: 600px) {
+@media screen and ( min-width: 425px) {
+    body {
+        margin: 0 auto;
+    }
+
+    header section .textos_header {
+        color: #000;
+    }
+
+    header .textos_header h1 {
+        margin-left: -300px;
+        flex-wrap: wrap;
+        font-size: 35px;
+    }
     
+    header .textos_header h2 {
+        margin-left: -300px;
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+    
+    header .textos_header .botones {
+        margin-top: 200px;
+        margin-left: -60px;
+    }   
 }

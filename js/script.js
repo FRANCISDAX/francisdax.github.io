@@ -14,3 +14,8 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     alert("¡Su cita ha sido enviado!");
     document.getElementById("formulario").reset();
 });
+
+function toggleMenu(x) {
+    x.classList.toggle("change");
+    document.querySelector('nav').classList.toggle('active');
+}
