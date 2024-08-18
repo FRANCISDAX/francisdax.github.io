@@ -118,7 +118,7 @@
 
       <!-- Formulario reseñas y comentarios -->
       <div class="contenedor-form">
-        <h3 class="texto-form">Deje un comentario</h3>
+        <h3 class="texto-form">Deje un comentario o reseña!</h3>
         <p>En caso de dudas o consultas estaremos aquí para ayudarlo.</p>
         <form id="contenido-form">
           <label for="nombre">Nombre</label>
@@ -136,7 +136,7 @@
             type="tel"
             id="numero"
             placeholder="Celular"
-            maxlength="12"
+            maxlength="9"
             required
           />
 
@@ -144,12 +144,13 @@
           <textarea
             id="descripcion"
             placeholder="Escribe tu comentario aquí..."
-            maxlength="200"
+            maxlength="100"
             required
           ></textarea>
           <button id="button" type="submit" value="Enviar">Enviar</button>
         </form>
       </div>
     </main>
+    <script src="/js/resena.js"></script>
   </body>
 </html>
