@@ -239,7 +239,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: rgba(65, 59, 59, 0.103);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 80px;
@@ -247,7 +247,7 @@ h2 {
 }
 
 .seccion-form {
-    background-color: #eee;
+    background-color: rgba(158, 206, 206, 0.212);
     padding: 20px;
     border-radius: 8px;
 }
