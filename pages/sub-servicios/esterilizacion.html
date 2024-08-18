@@ -115,6 +115,41 @@
           <!-- Las reseñas ingresadas se mostrarán aquí -->
         </div>
       </div>
+
+      <!-- Formulario reseñas y comentarios -->
+      <div class="contenedor-form">
+        <h3 class="texto-form">Deje un comentario</h3>
+        <p>En caso de dudas o consultas estaremos aquí para ayudarlo.</p>
+        <form id="contenido-form">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            required
+            minlength="4"
+            maxlength="12"
+          />
+
+          <label for="numero">Celular</label>
+          <input
+            type="tel"
+            id="numero"
+            placeholder="Celular"
+            maxlength="12"
+            required
+          />
+
+          <label for="descripcion">Descripción</label>
+          <textarea
+            id="descripcion"
+            placeholder="Escribe tu comentario aquí..."
+            maxlength="200"
+            required
+          ></textarea>
+          <button id="button" type="submit" value="Enviar">Enviar</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>
