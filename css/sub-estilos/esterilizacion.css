@@ -151,3 +151,28 @@ h1 {
     word-wrap: break-word;
     line-height: 26px;
 }
+
+/* Seccion reseñas y comentarios */
+
+.seccion-reseñas {
+    background-color: rgba(6, 68, 68, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(6, 68, 68, 0.1);
+    margin-bottom: 40px;
+    max-width: 70%;
+    margin-left: 180px;
+    overflow: hidden;
+}
+
+.seccion-reseñas h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #642a73;
+}
+
+.carrusel {
+    display: flex;
+    width: 100%;
+    /* animation: desplazarIzquierda 15s linear infinite; */
+}
