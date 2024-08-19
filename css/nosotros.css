@@ -193,6 +193,15 @@ main .contenedor_equipo {
 
 /* Diseño Responsive - Para PCs */
 @media only screen and (max-width: 1440px) and (min-width: 767px) {
+    header nav {
+        margin: 0;
+        /* border: thin solid red; */
+
+        & .logo {
+            /* border: thin solid red; */
+        }        
+    }
+
     header .textos_header {
         width: 550px;
         height: 300px;
@@ -221,6 +230,19 @@ main .contenedor_equipo {
 
 /* Diseño Responsive - Para Tablets */
 @media only screen and (max-width: 768px) and (min-width: 426px) {
+    header nav {
+        margin: 0;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+        & .logo {
+            margin-top: 5px;      
+            margin-left:-5px;
+        }
+    }
+
     header .textos_header {
         width: 500px;
         height: 300px;
@@ -284,7 +306,7 @@ main .contenedor_equipo {
 }
 
 /* Diseño Responsive - Para Móviles */
-@media only screen and ( max-width: 425px) {   
+@media only screen and ( max-width: 425px) {    
     header .textos_header {
         width: 100%;
         top: 150px;
@@ -305,10 +327,6 @@ main .contenedor_equipo {
         display: flex;
         width: 200px;
         left: -140px;
-    }
-
-    header nav .logo {
-        margin-left: 10px;
     }
 
     .menuNavegación {
