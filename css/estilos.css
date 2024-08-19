@@ -578,6 +578,12 @@ footer .grupo-2 small {
     .change .bar3 {
         transform: rotate(45deg) translate(-5px, -5px);
     }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
  
     footer .grupo-1 {
         grid-template-columns: 1fr;       
