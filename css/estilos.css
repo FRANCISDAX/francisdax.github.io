@@ -585,6 +585,10 @@ footer .grupo-2 small {
         flex-wrap: wrap;
     }
  
+    .footer {
+        padding-left: 20px;
+    }
+    
     footer .grupo-1 {
         grid-template-columns: 1fr;       
     }
