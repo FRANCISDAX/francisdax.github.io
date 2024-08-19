@@ -519,7 +519,7 @@ footer .grupo-2 small {
 @media only screen and ( max-width: 425px) {   
     header .textos_header {
         width: 100%;
-        top: 668px;
+        top: 120px;
     }
 
     header .textos_header .h1 {
@@ -538,6 +538,11 @@ footer .grupo-2 small {
         width: 200px;
         left: -140px;
     }
+
+    header nav .logo {
+        margin-left: 10px;
+    }
+
     .menuNavegación {
         visibility: hidden;
         display: none;
