@@ -41,10 +41,9 @@
       </nav>
     </header>
     <main class="container">
-
-    <!--Sección-imagen-información-->
+      <!--Sección-imagen-información-->
       <section>
-        <img src="/img/fondo-galeria.jpg" alt="Perro" class="section-img" />
+        <img src="/img/fondo-galeria.jpg" alt="Perro" class="seccion-imagen" />
       </section>
 
       <section class="contenido">
@@ -83,12 +82,48 @@
           </p>
         </div>
         <div class="contenido-derecha">
-          <img
-            src="/img/seccion-imagen.jpg"
-            alt="perro"
-            class="perro-img"
-          />
+          <img src="/img/seccion-imagen.jpg" alt="perro" class="perro-img" />
         </div>
       </section>
+
+      <!--seccion-1-presentación-->
+      <section class="contenedor-animal-pacientes">
+        <div class="animal-imagen">
+          <img id="perroGato-imagen" src="/img/pac-0.jpg" alt="Perro y Gato" />
+        </div>
+        <div class="animal-info">
+          <h3>Amor de mascota</h3>
+          <h2 id="animal-titulo" class="titulo-color">Gato y Perro</h2>
+          <p id="animal-descripcion">
+            El día antes de la operación cepíllelo para eliminar la suciedad y
+            los enredos del pelo. Intente que haga sus necesidades antes de
+            ingresarlo en la clínica.
+          </p>
+        </div>
+      </section>
+
+      <!--Sección-pacientes-selecionado-->
+      <section class="animal-seleccionado">
+        <div class="animal-opcion" onclick="cambiarAnimal('bene')">
+          <img src="/img/bene-pac1.jpg" alt="Perro" />
+          <p>Bene</p>
+        </div>
+        <div class="animal-opcion" onclick="cambiarAnimal('shin')">
+          <img src="/img/shin-pac2.jpeg" alt="Perro" />
+          <p>Shin</p>
+        </div>
+        <div class="animal-opcion" onclick="cambiarAnimal('lucas')">
+          <img src="/img/lucas-pac3.jpg" alt="Perro" />
+          <p>Lucas</p>
+        </div>
+        <div class="animal-opcion" onclick="cambiarAnimal('ani')">
+          <img src="/img/ani-pac4.jpeg" alt="Gato" />
+          <p>Ani</p>
+        </div>
+      </section>
+    </main>
+
+    <!--Script-selector-->
+    <script src="/js/selector.js"></script>
   </body>
 </html>

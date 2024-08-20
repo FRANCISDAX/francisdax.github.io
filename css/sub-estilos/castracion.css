@@ -126,10 +126,11 @@ nav {
     height: 60vh;
 }
 
-.section-img {
+.seccion-imagen {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 0px 10px 10px rgba(231, 7, 164, 0.63);
 }
 
 .contenido {
@@ -163,16 +164,87 @@ nav {
     flex: 2;
     display: flex;
     flex-direction: column;
+    margin: 0 0 10px;
 }
 
 .perro-img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    box-shadow: 0px 10px 10px rgba(231, 7, 164, 0.63);
 }
 
-.contenido-derecha p {
-    font-size: 14px;
-    line-height: 1.6;
+/* Seccion-1-presentación */
+
+.contenedor-animal-pacientes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(8, 8, 8, 0.1);
+    box-shadow: 0px 10px 10px rgba(231, 7, 164, 0.63);
+}
+
+.animal-imagen {
+    flex: 1;
+    max-width: 40%;
+}
+
+.animal-imagen img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.animal-info {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.titulo-color {
+    color: #642a73;
+}
+
+.animal-info h3 {
+    font-size: 18px;
+    color: #999;
     margin: 0 0 10px;
+}
+
+.animal-info h2 {
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+
+.animal-seleccionado {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.animal-opcion {
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    /*obteniene color del background hover*/
+}
+
+.animal-opcion img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.animal-opcion p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.animal-opcion:hover {
+    background-color: #642a73;
+    border-radius: 20px;
 }
