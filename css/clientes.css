@@ -6,6 +6,7 @@ main .contenedor {
     margin: auto;
     height: 100vh;
     background: var(--colorBlanco);
+    overflow: hidden;
 
     & h1{
         margin-top: 80px;
@@ -51,8 +52,6 @@ main .contenedor {
             }
         }    
     }
-
-
 }
 
 @keyframes animate {
@@ -66,20 +65,21 @@ main .contenedor {
 
 /* Area Testimonios */
 main .contenedorTestimonios {
-    padding-top: 0.75px;
-    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     background: var(--colorBackground);
 
     & .card {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
+        flex: 1 1 250px;
 
         & .avatar {
             background-color: var(--colorAcento);
             text-align: center;
-            width: 200px;
+            max-width: 200px;
             height: 300px;
             border: 2px solid;
             border-radius: 10px;
@@ -107,5 +107,77 @@ main .contenedorTestimonios {
                 border: 2px solid var(--colorBordes);
             }           
         }        
+    }
+}
+
+/* Diseño Responsive - Para Móviles */
+@media only screen and ( max-width: 425px) {    
+    header .textos_header {
+        width: 100%;
+        top: 150px;
+    }
+
+    header .textos_header .h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+    
+    header .textos_header .h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    header .textos_header .botones {
+        top: 500px;
+        display: flex;
+        width: 200px;
+        left: -140px;
+    }
+
+    .menuNavegación {
+        visibility: hidden;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: var(--colorAcento);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    nav.active .menuNavegación {
+        visibility: visible;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Animación del icono hamburguesa */
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedor .contenedor-clientes {
+        margin-bottom: 150px;
+        padding-bottom: 150px;
     }
 }
