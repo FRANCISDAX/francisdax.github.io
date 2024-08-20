@@ -1,14 +1,10 @@
 .img_header {
-    position: relative;
-    height: 350px;
-    width: 600px;
-    margin-top: 68px;
-    margin-left: 100px;
-    padding: 50px 0;
+    position: absolute;
+    top: 110px;
+    left: 100px;
     backdrop-filter: blur(6px);
-    border: none;
     animation: EntrarDesdeIzquierda 1.5s ease;
-
+    
     & img {
         width: 460px;
         height: 580px;
@@ -41,7 +37,7 @@ main .contenedor_campañas {
     padding-bottom: 60px;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background: var(--colorBlanco);
 
      /* Area Campañas */    
@@ -51,11 +47,11 @@ main .contenedor_campañas {
         align-items: center;
         flex-wrap: wrap;
         gap: 50px;
-        flex: 1 1 300px;
+        flex: 1 1 200px;
         
         & .imgActuales {
             margin-bottom: 10px;
-            overflow: hidden;
+            /* overflow: hidden; */
             cursor: pointer;
             box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     
@@ -72,5 +68,235 @@ main .contenedor_campañas {
                 transform: scale(1.03);
             }
         }            
+    }
+}
+
+/* Diseño Responsive - Para Pantallas Grandes */
+@media only screen and (min-width: 1440px) {
+    header .textos_header {
+        width: 700px;
+        height: 300px;
+        top: 170px;
+        left: 5px;
+    }
+
+    header .textos_header .h1 {
+        width: 100%;
+        font-size: 54px;
+        text-align: center;
+    }
+    
+    header .textos_header .h2 {
+        width: 100%;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    header .textos_header .botones {
+        top: 500px;
+        display: flex;
+        width: 200px;
+        left: -140px;
+    }
+}
+
+/* Diseño Responsive - Para PCs */
+@media only screen and (max-width: 1440px) and (min-width: 767px) {
+    header .textos_header {
+        width: 550px;
+        height: 300px;
+        top: 160px;
+    }
+
+    header .textos_header .h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+    
+    header .textos_header .h2 {
+        width: 100%;
+        font-size: 36px;
+    }
+
+    footer .grupo-1 {
+        grid-template-columns: 1fr;       
+    }
+    
+    footer .grupo-2 {
+        display: flex;
+        flex-wrap: wrap;       
+    }
+}
+
+/* Diseño Responsive - Para Tablets */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    header .textos_header {
+        width: 500px;
+        height: 300px;
+        top: 150px;
+    }
+ 
+    header .textos_header .h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    header .textos_header .h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+ 
+    header nav .logo {
+        margin-left: 20px;
+    }
+        
+    .menuNavegación {
+        visibility: hidden;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: var(--colorAcento);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    nav.active .menuNavegación {
+        visibility: visible;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Animación del icono hamburguesa */
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .footer {
+        padding-left: 20px;
+    }
+
+}
+
+/* Diseño Responsive - Para Móviles */
+@media only screen and ( max-width: 425px) {    
+    header .textos_header {
+        width: 100%;
+        top: 150px;
+    }
+
+    header .textos_header .h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+    
+    header .textos_header .h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    header .textos_header .botones {
+        top: 500px;
+        display: flex;
+        width: 200px;
+        left: -140px;
+    }
+
+    .menuNavegación {
+        visibility: hidden;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: var(--colorAcento);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    nav.active .menuNavegación {
+        visibility: visible;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Animación del icono hamburguesa */
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .img_header {
+        top: 150px;
+        left: 80px;
+        
+        & img {
+            width: 260px;
+            height: 380px;
+        }
+    }
+    
+    main .contenedor_campañas {
+        flex-basis: 200px;
+
+        & .titulo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        & .campañas {
+            width: 100%;
+            border: thick solid black;
+            
+            & .imgActuales {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                & img {
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-left: 20px;
+    }
+    
+    footer .grupo-1 {
+        grid-template-columns: 1fr;       
+    }
+    
+    footer .grupo-2 {
+        display: flex;
+        flex-wrap: wrap;       
     }
 }
