@@ -14,7 +14,6 @@
 
     <link rel="stylesheet" href="/css/sub-estilos/visitas.css" />
   </head>
-  <body>
     <header>
       <nav>
         <div class="logo">
@@ -40,7 +39,7 @@
         </ul>
       </nav>
     </header>
-  </body>
+  
 
   <!--main-contenedor-->
   <main class="contenedor">
@@ -92,5 +91,61 @@
         <button class="btn-popup" onclick="abrirPopup()">LEER MÁS</button>
       </div>
     </section>
+
+    <!--Formulario-->
+      <section class="seccion-form">
+        <h2>Contáctanos</h2>
+        <form id="form">
+          <div class="contenido-form">
+            <label for="to_name">Nombres</label>
+            <input type="text" id="to_name" name="to_name" />
+          </div>
+          <div class="contenido-form">
+            <label for="from_name">Apellidos</label>
+            <input type="text" id="from_name" name="from_name" />
+          </div>
+          <div class="contenido-form">
+            <label for="reply_to">Email</label>
+            <input type="email" id="reply_to" name="reply_to" />
+          </div>
+          <div class="contenido-form">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button id="button" type="submit" value="enviar">Enviar</button>
+        </form>
+      </section>
   </main>
+
+  <!-- Pop-up ventana que se muestra y  contenido -->
+    <div id="ventana-popup" class="ventana-popup">
+      <div class="ventana-popup-contenido">
+        <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+        <p>
+          Las vacunas para caninos por lo general son seis, las más comunes son,
+          hepatitis, parainfluenza, distemper, parvovirus, coronavirus y rabia,
+          pero hay que tener en cuenta que existen diferentes marcas de vacunas
+          en el mercado contra la KC o tos de perrera y contra la leptopira.
+        </p>
+      </div>
+    </div>
+
+    <!-- EmailJS script -->
+
+    <script src="/js/email.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "iETwAnz_woR3hlxVz",
+        });
+      })();
+    </script>
+
+    <script src="/js/popup.js"></script>
+  </body>
 </html>

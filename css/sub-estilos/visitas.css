@@ -184,3 +184,107 @@ nav {
     margin-bottom: 15px;
     color: #000;
 }
+
+/* Pop-up botones */
+
+.btn-popup {
+    padding: 10px 20px;
+    background-color: #642a73;
+    ;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-popup:hover {
+    background-color: #23655c;
+    ;
+}
+
+/* Pop-up */
+
+.ventana-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ventana-popup-contenido {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    color: #fff;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Formulario */
+
+.seccion-form {
+    background-color: #eee;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.seccion-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contenido-form {
+    margin-bottom: 15px;
+}
+
+.contenido-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contenido-form input,
+.contenido-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boton enviar-formulario */
+
+button {
+    display: inline-block;
+    background-color: #23655c;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #642a73;
+}
