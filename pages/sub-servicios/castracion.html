@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite PAGC</title>
+
+    <!-------fuente - google fonts-------->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/css/sub-estilos/castracion.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.jpg" alt="logo" width="60px" height="60px" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li class="submenu-contenido">
+            <a href="#">Servicios</a>
+            <ul class="submenu">
+              <li><a href="#">Medicina General</a></li>
+              <li><a href="#">Medicina Preventiva</a></li>
+              <li><a href="#">Análisis Clínicos</a></li>
+              <li><a href="#">Cirugías de esterilización</a></li>
+              <li><a href="#">Cirugías de castración</a></li>
+              <li><a href="#">Visitas a Domicilio</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Campañas</a></li>
+          <li><a href="#">Conócenos</a></li>
+          <li><a href="#">Galeria de Pacientes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <!--Sección-imagen-información-->
+      <section>
+        <img src="/img/fondo-galeria.jpg" alt="Perro" class="seccion-imagen" />
+      </section>
+
+      <section class="contenido">
+        <div class="contenido-izquierda">
+          <h2>Amor de Mascota</h2>
+          <h3>Cirugías de castración</h3>
+          <p>
+            La castración consiste en extirpar los testículos en el macho, y,
+            normalmente, el útero, los ovarios y las trompas de Falopio en la
+            hembra, si bien solo se extirpan los ovarios si se emplea cirugía
+            laparoscópica.
+          </p>
+          <h2>La castración del macho</h2>
+          <p>
+            Una alternativa a la castración quirúrgica consiste en ponerle un
+            implante hormonal subcutáneo al perro, método con el que se obtiene
+            el mismo efecto, pero con una duración limitada en el tiempo. Todo
+            lo que se describe a continuación en relación con la afectación del
+            comportamiento y demás es aplicable a la castración tanto química
+            como quirúrgica. <br />
+            lo general, el veterinario recomendará la castración quirúrgica si
+            existen indicaciones médicas y también si se observan determinados
+            cambios de comportamiento, pero en este último caso suele realizarse
+            una primera evaluación con un implante hormonal.
+          </p>
+          <h2>La castración de la hembra</h2>
+          <p>
+            En el método tradicional de castración (ovariohisterectomía, OHE) se
+            extirpan, además de los ovarios, el útero y las trompas de Falopio,
+            eliminándose así el riesgo de que la hembra sufra enfermedades
+            relacionadas con el útero, como la piometra, consistente en una
+            infección. Asimismo, la castración puede mejorar patologías como la
+            diabetes y la epilepsia. Por último, las perras que se sienten muy
+            cansadas o alicaídas durante el celo o que sufren pseudogestación
+            suelen beneficiarse de la castración.
+          </p>
+        </div>
+        <div class="contenido-derecha">
+          <img src="/img/seccion-imagen.jpg" alt="perro" class="perro-img" />
+        </div>
+      </section>
+
+      <!--seccion-1-presentación-->
+      <section class="contenedor-animal-pacientes">
+        <div class="animal-imagen">
+          <img id="perroGato-imagen" src="/img/pac-0.jpg" alt="Perro y Gato" />
+        </div>
+        <div class="animal-info">
+          <h3>Amor de mascota</h3>
+          <h2 id="animal-titulo" class="titulo-color">Gato y Perro</h2>
+          <p id="animal-descripcion">
+            El día antes de la operación cepíllelo para eliminar la suciedad y
+            los enredos del pelo. Intente que haga sus necesidades antes de
+            ingresarlo en la clínica.
+          </p>
+        </div>
+      </section>
+
+      <!--Sección-pacientes-selecionado-->
+      <section class="animal-seleccionado">
+        <div class="animal-opcion" onclick="cambiarAnimal('bene')">
+          <img src="/img/bene-pac1.jpg" alt="Perro" />
+          <p>Bene</p>
+        </div>
+        <div class="animal-opcion" onclick="cambiarAnimal('shin')">
+          <img src="/img/shin-pac2.jpeg" alt="Perro" />
+          <p>Shin</p>
+        </div>
+        <div class="animal-opcion" onclick="cambiarAnimal('lucas')">
+          <img src="/img/lucas-pac3.jpg" alt="Perro" />
+          <p>Lucas</p>
+        </div>
+        <div class="animal-opcion" onclick="cambiarAnimal('ani')">
+          <img src="/img/ani-pac4.jpeg" alt="Gato" />
+          <p>Ani</p>
+        </div>
+      </section>
+    </main>
+
+    <!--------Footer---->
+    <footer class="footerContenedor">
+      <div class="footerBlock1">
+        <h3>Fundación.<span>Pagc</span></h3>
+        <img src="/img/logo.jpg" alt="logo" />
+        <p class="footerCopyright">
+          <strong>© Fundación PAGC 2024.</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footerBlock2">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>CL Samoa 327</span>La molina</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>999888777</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>fundacionPAGC@outlook.com</p>
+        </div>
+      </div>
+
+      <div class="footerBlock3">
+        <p class="footerInfo">
+          <span>Horarios</span>
+          <strong>Fundación PAGC</strong> nuestra atención es de lunes a viernes
+          desde las 9:30 a 19:30 - sábados 9:30 a 12:00 Fuera de este horario, y
+          para casos clínicos, será atendido en el teléfono de urgencias.
+        </p>
+        <div class="footerIconos">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-----font awesome icons CDN-->
+    <script
+      src="https://kit.fontawesome.com/848a6f3792.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Script-selector-->
+    <script src="/js/selector.js"></script>
+  </body>
+</html>

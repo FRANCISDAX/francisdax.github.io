@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite PAGC</title>
+
+    <!-------fuente - google fonts-------->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/css/sub-estilos/visitas.css" />
+  </head>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/img/logo.jpg" alt="logo" width="60px" height="60px" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li class="submenu-contenido">
+            <a href="#">Servicios</a>
+            <ul class="submenu">
+              <li><a href="#">Medicina General</a></li>
+              <li><a href="#">Medicina Preventiva</a></li>
+              <li><a href="#">Análisis Clínicos</a></li>
+              <li><a href="#">Cirugías de esterilización</a></li>
+              <li><a href="#">Cirugías de castración</a></li>
+              <li><a href="#">Visitas a Domicilio</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Campañas</a></li>
+          <li><a href="#">Conócenos</a></li>
+          <li><a href="#">Galeria de Pacientes</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+
+  <!--main-contenedor-->
+  <main class="contenedor">
+    <h1>Visitas a Domicilio</h1>
+
+    <!-- Repetir las secciones aquí -->
+    <!--S1-->
+    <section class="seccion-contenido">
+      <div>
+        <img src="/img/descartes_1.jpg" alt="img-perfil" class="img-perfil" />
+        <p class="descripcion">DESCARTES A DOMICILIO</p>
+      </div>
+      <div class="contenido-texto">
+        <h2>¿Deseas detectar si tu gatito tiene Leucemia ó Sida Felinos?</h2>
+        <p>
+          Realiza esta prueba en tu domicilio. Contamos con reconocidas marcas y
+          promociones.
+        </p>
+      </div>
+    </section>
+
+    <!--S2-->
+    <section class="seccion-contenido">
+      <div class="imagen-contenido">
+        <img src="/img/consultas_2.jpg" alt="perfil" class="img-perfil" />
+        <p class="descripcion">CONSULTAS Y TELECONSULTA</p>
+      </div>
+      <div class="contenido-texto">
+        <h2>Programa una cita!</h2>
+        <p>
+          Un médico veterinario especializado en felinos, a fin de resolver
+          cualquier duda en cuanto a la salud de tu michu.
+        </p>
+      </div>
+    </section>
+
+    <!--S3-->
+    <section class="seccion-contenido">
+      <div>
+        <img src="/img/vacunacion_3.jpg" alt="img-perfil" class="img-perfil" />
+        <p class="descripcion">VACUNACIÓN A DOMICILIO</p>
+      </div>
+      <div class="contenido-texto">
+        <h2>Te ofrecemos el mejor servicio!!</h2>
+        <p>
+          Vacunación especializado en gatitos, a domicilio: Vacuna triple
+          felina, antirrábica ó de leucemia felina.
+        </p>
+        <button class="btn-popup" onclick="abrirPopup()">LEER MÁS</button>
+      </div>
+    </section>
+
+    <!--Formulario-->
+      <section class="seccion-form">
+        <h2>Contáctanos</h2>
+        <form id="form">
+          <div class="contenido-form">
+            <label for="to_name">Nombres</label>
+            <input type="text" id="to_name" name="to_name" />
+          </div>
+          <div class="contenido-form">
+            <label for="from_name">Apellidos</label>
+            <input type="text" id="from_name" name="from_name" />
+          </div>
+          <div class="contenido-form">
+            <label for="reply_to">Email</label>
+            <input type="email" id="reply_to" name="reply_to" />
+          </div>
+          <div class="contenido-form">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button id="button" type="submit" value="enviar">Enviar</button>
+        </form>
+      </section>
+  </main>
+
+  <!-- Pop-up ventana que se muestra y  contenido -->
+    <div id="ventana-popup" class="ventana-popup">
+      <div class="ventana-popup-contenido">
+        <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+        <p>
+          Las vacunas para caninos por lo general son seis, las más comunes son,
+          hepatitis, parainfluenza, distemper, parvovirus, coronavirus y rabia,
+          pero hay que tener en cuenta que existen diferentes marcas de vacunas
+          en el mercado contra la KC o tos de perrera y contra la leptopira.
+        </p>
+      </div>
+    </div>
+
+
+     <!--------Footer---->
+    <footer class="footerContenedor">
+      <div class="footerBlock1">
+        <h3>Fundación.<span>Pagc</span></h3>
+        <img src="/img/logo.jpg" alt="logo" />
+        <p class="footerCopyright">
+          <strong>© Fundación PAGC 2024.</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footerBlock2">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>CL Samoa 327</span>La molina</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>999888777</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>fundacionPAGC@outlook.com</p>
+        </div>
+      </div>
+
+      <div class="footerBlock3">
+        <p class="footerInfo">
+          <span>Horarios</span>
+          <strong>Fundación PAGC</strong> nuestra atención es de lunes a viernes
+          desde las 9:30 a 19:30 - sábados 9:30 a 12:00 Fuera de este horario, y
+          para casos clínicos, será atendido en el teléfono de urgencias.
+        </p>
+        <div class="footerIconos">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- EmailJS script -->
+
+    <script src="/js/email.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "iETwAnz_woR3hlxVz",
+        });
+      })();
+    </script>
+
+    <!-----font awesome icons CDN-->
+    <script
+      src="https://kit.fontawesome.com/848a6f3792.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/popup.js"></script>
+  </body>
+</html>
