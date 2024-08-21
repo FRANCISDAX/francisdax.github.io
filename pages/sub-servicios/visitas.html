@@ -11,32 +11,42 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link rel="website icon" href="/img/logo.jpg" type="jpg">
+    <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/sub-estilos/visitas.css" />
   </head>
     <header>
       <nav>
+        <!-- Icono del menú hamburguesa -->
+        <div class="menu-icon" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
         <div class="logo">
           <img src="/img/logo.jpg" alt="logo" width="60px" height="60px" />
         </div>
-        <ul class="menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li class="submenu-contenido">
-            <a href="#">Servicios</a>
-            <ul class="submenu">
-              <li><a href="#">Medicina General</a></li>
-              <li><a href="#">Medicina Preventiva</a></li>
-              <li><a href="#">Análisis Clínicos</a></li>
-              <li><a href="#">Cirugías de esterilización</a></li>
-              <li><a href="#">Cirugías de castración</a></li>
-              <li><a href="#">Visitas a Domicilio</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Campañas</a></li>
-          <li><a href="#">Conócenos</a></li>
-          <li><a href="#">Galeria de Pacientes</a></li>
-        </ul>
+        <div class="menuNavegación">
+          <a href="/index.html" class="play-sound">Inicio</a>
+          <a href="/pages/nosotros.html" class="play-sound">Nosotros</a>
+          <div class="submenu-container">
+              <a href="#" class="play-sound">Servicios ▼</a>
+              <div class="submenu">
+                  <a href="#" class="play-sound">Visitas a Domicilio</a>
+                  <hr>
+                  <a href="/pages/sub-servicios/esterilizacion.html" class="play-sound">Cirugía Veterinaria Esterilización</a>
+                  <a href="/pages/sub-servicios/castracion.html" class="play-sound">Cirugía Veterinaria Castración</a>
+                  <hr>
+                  <a href="/pages/sub-servicios/analisisClinico.html" class="play-sound">Análisis Clínico</a>
+                  <hr>
+                  <a href="/pages/sub-servicios/medicinaGeneral.html" class="play-sound">Medicina General</a>
+                  <a href="/pages/sub-servicios/medicinaPreventiva.html" class="play-sound">Medicina Preventiva</a>
+              </div>
+          </div>
+          <a href="/pages/campañas.html" class="play-sound">Campañas</a>
+          <a href="/pages/clientes.html" class="play-sound">Clientes</a>
+          <a href="/pages/contactos.html" class="play-sound">Contactos</a>
+      </div>
       </nav>
     </header>
   
@@ -196,5 +206,9 @@
     ></script>
 
     <script src="/js/popup.js"></script>
+    <!-- Sonido cuando se hace click -->
+    <audio class="audio" src="/sound/Click.mp3" preload="auto"></audio>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
