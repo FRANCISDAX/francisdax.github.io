@@ -127,7 +127,7 @@
 }
 
 /* Diseño Responsive - Para Móviles */
-@media only screen and ( max-width: 425px) {    
+@media ( width <= 425px ) {
     .contenedor_contactos {
         min-width: 100%;
         margin-top: -40px;

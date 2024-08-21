@@ -74,12 +74,16 @@ main .contenedor_campañas {
     }
 }
 
+/* Diseño Responsive - Para Pantallas Grandes */
+@media ( width >= 1440px ){
+}
+
 /* Diseño Responsive - Para PCs */
-@media only screen and (max-width: 1440px) {
+@media ( 768px <= width <= 1440px ) {
 }
 
 /* Diseño Responsive - Para Tablets */
-@media only screen and ( max-width: 768px ) {
+@media ( 425px <= width <= 768px ) {
     .img_header {
         top: 150px;
         left: 80px;
@@ -92,7 +96,7 @@ main .contenedor_campañas {
 }
 
 /* Diseño Responsive - Para Móviles */
-@media only screen and ( max-width: 425px) {    
+@media ( width <= 425px ) {
     .img_header {
         top: 150px;
         left: 80px;

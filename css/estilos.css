@@ -395,36 +395,11 @@ footer .grupo-2 small {
 
 
 /* Diseño Responsive - Para Pantallas Grandes */
-@media only screen and (min-width: 1440px) {
-    header .textos_header {
-        width: 700px;
-        height: 300px;
-        top: 170px;
-        left: 5px;
-    }
-
-    header .textos_header .h1 {
-        width: 100%;
-        font-size: 54px;
-        text-align: center;
-    }
-    
-    header .textos_header .h2 {
-        width: 100%;
-        font-size: 36px;
-        text-align: center;
-    }
-    
-    header .textos_header .botones {
-        top: 500px;
-        display: flex;
-        width: 200px;
-        left: -140px;
-    }
+@media ( width >= 1440px ){
 }
 
 /* Diseño Responsive - Para PCs */
-@media only screen and (max-width: 1440px) and (min-width: 767px) {
+@media ( 768px <= width <= 1440px ) {
     header .textos_header {
         width: 550px;
         height: 300px;
@@ -441,18 +416,17 @@ footer .grupo-2 small {
         font-size: 36px;
     }
 
-    footer .grupo-1 {
-        grid-template-columns: 1fr;       
+    header nav .menuNavegación > a {
+        font-size: 18px;
     }
-    
-    footer .grupo-2 {
-        display: flex;
-        flex-wrap: wrap;       
-    }
+
+    header nav .menuNavegación .submenu-container {
+        font-size: 18px;
+    }   
 }
 
 /* Diseño Responsive - Para Tablets */
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media ( 425px <= width <= 768px ) {
     header .textos_header {
         width: 500px;
         height: 300px;
@@ -513,10 +487,18 @@ footer .grupo-2 small {
         padding-left: 20px;
     }
 
+    footer .grupo-1 {
+        grid-template-columns: 1fr;       
+    }
+
+    footer .grupo-2 {
+        display: flex;
+        flex-wrap: wrap;       
+    }
 }
 
 /* Diseño Responsive - Para Móviles */
-@media only screen and ( max-width: 425px) {   
+@media ( width <= 425px ) {
     header .textos_header {
         width: 100%;
         top: 120px;

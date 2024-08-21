@@ -111,7 +111,7 @@ main .contenedorTestimonios {
 }
 
 /* Diseño Responsive - Para Móviles */
-@media only screen and ( max-width: 425px) {    
+@media ( width <= 425px ) {
     .contenedor .contenedor-clientes {
         margin-bottom: 150px;
         padding-bottom: 150px;
