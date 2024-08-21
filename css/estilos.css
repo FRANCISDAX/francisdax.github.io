@@ -56,7 +56,7 @@ body {
 .botonNeon {
     width: 150px;
     height: 60px;
-    margin: 30px 130px;
+    margin: 30px 130px; 
     font-size: 15px;
     padding: 10px 20px;
     border: none;
@@ -337,8 +337,7 @@ footer .grupo-1 .box p {
     &> a {
         color: var(--colorAcento);
         text-decoration: none;
-    }
-    
+    }   
 }
 
 footer .grupo-1 .box .redesSociales a {
@@ -422,11 +421,15 @@ footer .grupo-2 small {
 
     header nav .menuNavegación .submenu-container {
         font-size: 18px;
-    }   
+    }
+    
+    .video-container {
+        flex: 1 1 calc(50% - 20px);
+    }
 }
 
 /* Diseño Responsive - Para Tablets */
-@media ( 425px <= width <= 768px ) {
+@media ( 426px <= width <= 768px ) {
     header .textos_header {
         width: 500px;
         height: 300px;
@@ -459,11 +462,18 @@ footer .grupo-2 small {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 999;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
     nav.active .menuNavegación {
         visibility: visible;
         display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
     }
 
     .menu-icon {
@@ -495,10 +505,14 @@ footer .grupo-2 small {
         display: flex;
         flex-wrap: wrap;       
     }
+
+    .video-container {
+        flex: 1 1 100%;
+    }
 }
 
 /* Diseño Responsive - Para Móviles */
-@media ( width <= 425px ) {
+@media ( width <= 426px ) {
     header .textos_header {
         width: 100%;
         top: 120px;
@@ -537,11 +551,17 @@ footer .grupo-2 small {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 999;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
     nav.active .menuNavegación {
         visibility: visible;
         display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 
     .menu-icon {
