@@ -34,7 +34,7 @@ function cambiarAnimal(pacientes) {
       imagenSrc = "/img/ani-pac4.jpeg";
       titulo = "Ani!";
       descripcion =
-        "Los conejos son mascotas tiernas y cariñosas, perfectas para hogares tranquilos...";
+        "Son mascotas tiernas y cariñosas, perfectas para hogares tranquilos...";
       break;
   }
 
