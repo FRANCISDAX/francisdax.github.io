@@ -126,6 +126,30 @@
     }
 }
 
+.dialogo_modal {
+    width: 40%;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dialogo_modal[open] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dialogo_modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+  }
+
 /* Diseño Responsive - Para Móviles */
 @media ( width <= 425px ) {
     .contenedor_contactos {

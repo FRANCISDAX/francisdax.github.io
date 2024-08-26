@@ -17,7 +17,10 @@ document.querySelectorAll('.play-sound').forEach(function(element) {
 
 document.getElementById("formulario").addEventListener("submit", function(event) {
     event.preventDefault();
-    alert("¡Su cita ha sido enviado!");
+
+    const modal = document.querySelector(".dialogo_modal");
+    modal.showModal();
+
     document.getElementById("formulario").reset();
 });
 
