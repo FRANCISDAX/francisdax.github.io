@@ -6,6 +6,7 @@ main .contenedor {
     margin: auto;
     height: 100vh;
     background: var(--colorBlanco);
+    overflow: hidden;
 
     & h1{
         margin-top: 80px;
@@ -51,8 +52,6 @@ main .contenedor {
             }
         }    
     }
-
-
 }
 
 @keyframes animate {
@@ -66,20 +65,21 @@ main .contenedor {
 
 /* Area Testimonios */
 main .contenedorTestimonios {
-    padding-top: 0.75px;
-    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     background: var(--colorBackground);
 
     & .card {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
+        flex: 1 1 250px;
 
         & .avatar {
             background-color: var(--colorAcento);
             text-align: center;
-            width: 200px;
+            max-width: 200px;
             height: 300px;
             border: 2px solid;
             border-radius: 10px;
@@ -107,5 +107,13 @@ main .contenedorTestimonios {
                 border: 2px solid var(--colorBordes);
             }           
         }        
+    }
+}
+
+/* Diseño Responsive - Para Móviles */
+@media ( width <= 425px ) {
+    .contenedor .contenedor-clientes {
+        margin-bottom: 150px;
+        padding-bottom: 150px;
     }
 }

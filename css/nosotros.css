@@ -58,8 +58,7 @@ main .contenedor_nosotros {
             & li{
                 margin-left: 22px;
                 margin-top: 10px;
-            }
-            
+            }            
         }
     }
 }
@@ -160,5 +159,242 @@ main .contenedor_equipo {
                 }
             }
         }
+    }
+}
+
+/* Diseño Responsive - Para Pantallas Grandes */
+@media only screen and (min-width: 1440px) {
+    header .textos_header {
+        width: 700px;
+        height: 300px;
+        top: 170px;
+        left: 5px;
+    }
+
+    header .textos_header .h1 {
+        width: 100%;
+        font-size: 54px;
+        text-align: center;
+    }
+    
+    header .textos_header .h2 {
+        width: 100%;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    header .textos_header .botones {
+        top: 500px;
+        display: flex;
+        width: 200px;
+        left: -140px;
+    }
+}
+
+/* Diseño Responsive - Para Pantallas Grandes */
+@media ( width >= 1440px ) {
+    main .contenedor_nosotros {
+        height: 100%;
+
+        & .contenedor-nosotros {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+/* Diseño Responsive - Para PCs */
+@media ( 768px <= width <= 1440px ) {
+    main .contenedor_nosotros {
+        height: 100%;
+
+        & .contenedor-nosotros {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+/* Diseño Responsive - Para Tablets */
+@media ( 425px <= width <= 768px ) {
+    main .contenedor_nosotros {
+        position: relative;
+        padding: 0;
+        height: 100%;
+
+        & .contenedor-nosotros {
+            display: flex;
+            flex-direction: column;
+
+            & .img {
+                display: inline-block;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px;
+                width: 100%;
+                
+                & .img1, .img2, .img3 {
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }      
+            }
+
+            & .contenido-textos {
+                & p, h3 {
+                    padding: 0 10px;
+                }
+                
+                & h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    main .contenedor_equipo {
+        padding: 0;
+        height: 100%;
+
+        & .contenedor-equipo {
+            display: flex;
+            flex-direction: column;
+    
+            & .img {
+                display: inline-block;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px;
+                width: 100%;
+
+                & .img1, .img2, .img3 {
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }    
+            }
+
+            & .contenido-textos {
+                & p, h3 {
+                    padding: 0 10px;
+                }
+                
+                & h3 {
+                    text-align: center;
+                }
+
+                & .card {
+                    justify-content: center;
+
+                    & .avatar{
+                        margin-top: 15px;
+
+                        & p {
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Diseño Responsive - Para Móviles */
+@media ( width <= 425px ) {
+    main .contenedor_nosotros {
+        position: relative;
+        padding: 0;
+        height: 100%;
+
+        & .contenedor-nosotros {
+            display: flex;
+            flex-direction: column;
+
+            & .img {
+                display: inline-block;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px;
+                width: 100%;
+                
+                & .img1, .img2, .img3 {
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }      
+            }
+
+            & .contenido-textos {
+                & p, h3 {
+                    padding: 0 10px;
+                }
+                
+                & h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    main .contenedor_equipo {
+        padding: 0;
+        height: 100%;
+
+        & .contenedor-equipo {
+            display: flex;
+            flex-direction: column;
+    
+            & .img {
+                display: inline-block;
+                flex-direction: row;
+                justify-content: center;
+                padding: 10px;
+                width: 100%;
+
+                & .img1, .img2, .img3 {
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }    
+            }
+
+            & .contenido-textos {
+                & p, h3 {
+                    padding: 0 10px;
+                }
+                
+                & h3 {
+                    text-align: center;
+                }
+
+                & .card {
+                    justify-content: center;
+
+                    & .avatar{
+                        margin-top: 15px;
+
+                        & p {
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-left: 20px;
+    }
+    
+    footer .grupo-1 {
+        grid-template-columns: 1fr;       
+    }
+    
+    footer .grupo-2 {
+        display: flex;
+        flex-wrap: wrap;       
     }
 }

@@ -13,6 +13,11 @@
     <header>
         <!-- Barra de Navegación  -->
         <nav>
+            <div class="menu-icon" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
             <!-- Logo de la Empresa  -->
             <img class="logo" src="../img/logo.jpg" width="60px" height="60px" alt="Logo">
             <!-- Menú de Navegación  -->
@@ -20,12 +25,12 @@
                 <a href="/index.html" class="play-sound">Inicio</a>
                 <a href="/pages/nosotros.html" class="play-sound">Nosotros</a>
                 <div class="submenu-container">
-                    <a href="/pages/servicios.html" class="play-sound">Servicios ▼</a>
+                    <a href="#" class="play-sound">Servicios ▼</a>
                     <div class="submenu">
-                        <a href="#" class="play-sound">Visitas a Domicilio</a>
+                        <a href="/pages/sub-servicios/visitas.html" class="play-sound">Visitas a Domicilio</a>
                         <hr>
                         <a href="/pages/sub-servicios/esterilizacion.html" class="play-sound">Cirugía Veterinaria Esterilización</a>
-                        <a href="#" class="play-sound">Cirugía Veterinaria Castración</a>
+                        <a href="/pages/sub-servicios/castracion.html" class="play-sound">Cirugía Veterinaria Castración</a>
                         <hr>
                         <a href="/pages/sub-servicios/analisisClinico.html" class="play-sound">Análisis Clínico</a>
                         <hr>
@@ -40,9 +45,9 @@
         </nav>
         <!-- Banner  -->
         <section class="textos_header">
-            <h2>CLIENTES</h2>
-            <h1>"Pequeñas Acciones</h1>
-            <h1>Grandes Cambios"</h1>
+            <h2 class="h2">CLIENTES</h2>
+            <h1 class="h1">"Pequeñas Acciones</h1>
+            <h1 class="h1">Grandes Cambios"</h1>
         </section>
     </header>
     <!-- Contenedor Principal  -->

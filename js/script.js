@@ -1,11 +1,28 @@
+// document.querySelectorAll('.play-sound').forEach(function(element) {
+//     element.addEventListener('click', function(event) {
+//         event.preventDefault();
+//         var audio = document.querySelector('.audio');
+//         audio.play();
+//         setTimeout(() => {
+//             window.location.href = element.href;
+//         }, 250);
+//     });
+// });
+
 document.querySelectorAll('.play-sound').forEach(function(element) {
     element.addEventListener('click', function(event) {
         event.preventDefault();
+        
         var audio = document.querySelector('.audio');
-        audio.play();
-        setTimeout(() => {
+        
+        // Reproduce el sonido y luego redirige cuando esté listo
+        audio.play().then(() => {
+            // Solo navega si el audio se reproduce correctamente
             window.location.href = element.href;
-        }, 250);
+        }).catch((error) => {
+            // Si ocurre un error al reproducir el audio, redirige de todas formas
+            window.location.href = element.href;
+        });
     });
 });
 

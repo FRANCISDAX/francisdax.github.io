@@ -7,3 +7,84 @@ Smartphone : Móviles.
 769px - 1024px : Portátiles o Laptops.
 1025px - 1200px : Escritorio o Pantallas Grandes.
 1201px y más : Pantallas Extragrandes, TV.
+
+<section id="main">
+	<div class="container">
+		<nav>
+			<img />
+			<ul class="nav-list">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><button class="btn btn-sec">Click</button></li>
+			</ul>
+		</nav>
+		<div class="main-content">
+			<h1 class="intro-heading">Holis</h1>
+			<p>Lorem ipsus</p>
+			<button class="btn btn-pri">Click</button>
+		</div>
+	</div>
+</section>
+<section id="services">
+</section>
+<section id="footer">
+</section>
+
+#main{
+	background-image: url("./img/main.png");
+	min-height: 70vh;
+	background-position: bottom center;
+	background-size: cover;
+}
+
+.container{
+	max-width: 1200px;
+	padding: 16px;
+	margin: auto;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list{
+	display: flex;
+	list-style: none;
+	gap: 28px;
+	align-items: center;
+}
+
+.nav-list a{
+	color: White;
+}
+
+.btn{
+	padding: 12px 20px;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.btn-pri{
+	border: none;
+	background: yellow;
+	color: White;
+}
+
+.btn-sec{
+	border: 2px solid White;
+	color: White;
+	font-weight: bold;
+}
+
+.main-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+	color: White;
+}
