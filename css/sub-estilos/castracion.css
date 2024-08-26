@@ -136,6 +136,7 @@ nav {
 .contenido {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .contenido-izquierda {
@@ -147,17 +148,21 @@ nav {
     font-size: 14px;
     text-transform: uppercase;
     color: #8b8b8b;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contenido-izquierda h3 {
     font-size: 28px;
     margin: 0;
     color: #642a73;
+    margin-bottom: 20px;
 }
 
 .contenido-izquierda p {
     font-size: 24px;
     font-family: bold;
+    margin-bottom: 20px;
 }
 
 .contenido-derecha {
